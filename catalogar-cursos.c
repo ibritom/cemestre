@@ -257,15 +257,15 @@ static int esta_aprobado(json_t *historial_root, const char *codigo) {
                 json_t *j_aprobado = json_object_get(curso, "aprobado");
                 if (j_aprobado && json_is_boolean(j_aprobado)) {
 		    int aprobado = json_is_true(j_aprobado);
-		    printf("%s: %s\n", codigo, aprobado ? "aprobado" : "no aprobado");
+		    // printf("%s: %s\n", codigo, aprobado ? "aprobado" : "no aprobado"); print para debugging
                     return aprobado ? 1 : 0;
                 }
-		printf("%s: encontrado pero sin campo 'aprobado' válido\n", codigo);
+		// printf("%s: encontrado pero sin campo 'aprobado' válido\n", codigo); print para debugging
                 return 0; // encontrado pero sin campo 'aprobado' válido
             }
         }
     }
-    printf("%s: no aparece en el historial\n", codigo);
+    // printf("%s: no aparece en el historial\n", codigo); print para debugging
     return -1; // no encontrado en ningún bloque
 }
 
@@ -305,6 +305,50 @@ static void liberar_verificacion(VerificacionRequisitos *v) {
     v->num_correquisitos_pendientes = 0;
 }
 
+// Funciones para imprimir todos los cursos matriculables
+static char **listar_cursos_matriculables(json_t *historial_root,
+                                           const GrupoCurso *plan, size_t num_grupos,
+                                           size_t *out_count) {
+    char **result = malloc(num_grupos * sizeof(char *)); // cota superior
+    size_t count = 0;
+
+    for (size_t i = 0; i < num_grupos; i++) {
+        const char *codigo = plan[i].codigo;
+
+        // Saltar si ya agregamos este código (varios grupos comparten curso)
+        int ya_incluido = 0;
+        for (size_t j = 0; j < count; j++) {
+            if (strcmp(result[j], codigo) == 0) {
+                ya_incluido = 1;
+                break;
+            }
+        }
+        if (ya_incluido) continue;
+
+        // Saltar cursos que ya están aprobados
+        if (esta_aprobado(historial_root, codigo) == 1) continue;
+
+        // Un curso es matriculable si todos sus requisitos están cumplidos.
+        // (Los correquisitos no bloquean, así que no se revisan acá.)
+        VerificacionRequisitos v = verificar_requisitos(historial_root, &plan[i]);
+        if (v.requisitos_cumplidos) {
+            result[count] = strdup(codigo);
+            count++;
+        }
+        liberar_verificacion(&v);
+    }
+
+    *out_count = count;
+    return result;
+}
+
+static void imprimir_cursos_matriculables(char **codigos, size_t count) {
+    printf("CURSOS_MATRICULABLES:%zu\n", count);
+    for (size_t i = 0; i < count; i++) {
+        printf("%s\n", codigos[i]);
+    }
+}
+
 int main(int argc, char *argv[]) {
 	// Output si se dan menos de dos argumentos
 	if (argc != 3) {
@@ -339,33 +383,19 @@ int main(int argc, char *argv[]) {
 		return 1;
 	}
 
-	// Verificar si el campo "carrera" existe en el historial y si es un string
-	// Si ambas condiciones se cumplen, imprimir el string
-	//json_t *carrera = json_object_get(historial_root, "carrera");
-	//if (!carrera || !json_is_string(carrera)) {
-	//	fprintf(stderr, "El campo 'carrera' no se encontró como string en '%s'\n", historial_filename);
-	//	json_decref(plan_root);
-	//	json_decref(historial_root);
-	//	return 1;
-	//}
-	//printf("Carrera: %s\n", json_string_value(carrera));
-
 	// Parsear todo el plan de estudios a un arreglo de GrupoCurso
 	size_t num_grupos = 0;
 	GrupoCurso *plan = parsear_plan(plan_root, &num_grupos);
 
 	printf("Total de grupos cargados: %zu\n\n", num_grupos);
 
-	// Ahora, imprimir los primeros 3 grupos para verificar que todo este correcto
-	//for (size_t i = 0; i < num_grupos && i < 3; i++) {
-	//	imprimir_grupo(&plan[i]);
-	//}
+	// Imprimir los cursos matriculables
+	size_t num_matriculables = 0;
+	char **matriculables = listar_cursos_matriculables(historial_root, plan, num_grupos, &num_matriculables);
+	imprimir_cursos_matriculables(matriculables, num_matriculables);
 
-	// Probar si esta_aprobado sirve correctamente
-	esta_aprobado(historial_root, "EL2207");
-	esta_aprobado(historial_root, "MA1102");
-
-	// TODO: Implementar la lógica para conseguir el catálogo de los cursos
+	// TODO: Implementar la lógica para verificar el choque de horarios, y imprimir todo al archivo de salida
+	liberar_array_strings(matriculables, num_matriculables);
 	liberar_plan(plan, num_grupos);
 	json_decref(plan_root);
 	json_decref(historial_root);
