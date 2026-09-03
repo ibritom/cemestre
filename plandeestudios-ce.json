@@ -1,1 +1,6792 @@
-{}
+{
+  "tipo": "plan",
+  "carrera": "ingenieria-computadores",
+  "cursos": [
+    {
+      "codigo": "AE4208",
+      "nombre": "Desarrollo de emprendedores",
+      "creditos": 4,
+      "requisitos": [
+        "CS2101"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "BRENES CERVANTES IVANNIA"
+          ],
+          "horario": [
+            {
+              "inicio": "11700",
+              "fin": "12050"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "GUERRERO VARGAS LIGIA"
+          ],
+          "horario": [
+            {
+              "inicio": "21700",
+              "fin": "22050"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "GARITA GRANADOS CARLA"
+          ],
+          "horario": [
+            {
+              "inicio": "31700",
+              "fin": "32050"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "LEANDRO ELIZONDO RONALD"
+          ],
+          "horario": [
+            {
+              "inicio": "40730",
+              "fin": "41120"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "GUILLEN MIRANDA ERICK"
+          ],
+          "horario": [
+            {
+              "inicio": "00730",
+              "fin": "01120"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "GUILLEN MIRANDA ERICK"
+          ],
+          "horario": [
+            {
+              "inicio": "31700",
+              "fin": "32050"
+            }
+          ]
+        },
+        {
+          "grupo": 7,
+          "profesores": [
+            "THAMES RAMIREZ KARLA"
+          ],
+          "horario": [
+            {
+              "inicio": "40730",
+              "fin": "41120"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "CORDOBA ARTAVIA OSCAR"
+          ],
+          "horario": [
+            {
+              "inicio": "10755",
+              "fin": "11130"
+            }
+          ]
+        },
+        {
+          "grupo": 40,
+          "profesores": [
+            "FAITH VARGAS MARGIE"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31650"
+            }
+          ]
+        },
+        {
+          "grupo": 20,
+          "profesores": [
+            "PEREZ OROZCO ALLAN JOSE"
+          ],
+          "horario": [
+            {
+              "inicio": "21700",
+              "fin": "22050"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE1101",
+      "nombre": "Introducción a la programación",
+      "creditos": 3,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "SCHMIDT PERALTA JEFF"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "30920"
+            },
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "SCHMIDT PERALTA JEFF"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE1103",
+      "nombre": "Algoritmos y estructuras de datos I",
+      "creditos": 4,
+      "requisitos": [
+        "CE1101",
+        "CE1104",
+        "MA1403"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "RAMIREZ TREJOS ELLIOTH"
+          ],
+          "horario": [
+            {
+              "inicio": "21700",
+              "fin": "21850"
+            },
+            {
+              "inicio": "41700",
+              "fin": "41850"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "GAMBOA RAMIREZ SANTIAGO"
+          ],
+          "horario": [
+            {
+              "inicio": "31500",
+              "fin": "31650"
+            },
+            {
+              "inicio": "11500",
+              "fin": "11650"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "BARBOZA ARTAVIA LUIS"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE1104",
+      "nombre": "Fundamentos de sistemas computacionales",
+      "creditos": 3,
+      "requisitos": [],
+      "correquisitos": [
+        "CE1101"
+      ],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "VILLEGAS LEMUS MILTON"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "30920"
+            },
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE1105",
+      "nombre": "Principios de modelado en Ingeniería",
+      "creditos": 3,
+      "requisitos": [
+        "CE1104"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "MORA ROJAS DIEGO"
+          ],
+          "horario": [
+            {
+              "inicio": "31700",
+              "fin": "31850"
+            },
+            {
+              "inicio": "11700",
+              "fin": "11850"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "RIVERA MENESES MARCO"
+          ],
+          "horario": [
+            {
+              "inicio": "21700",
+              "fin": "21850"
+            },
+            {
+              "inicio": "41700",
+              "fin": "41850"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "HERNANDEZ VASQUEZ MARCO"
+          ],
+          "horario": [
+            {
+              "inicio": "31900",
+              "fin": "32050"
+            },
+            {
+              "inicio": "11900",
+              "fin": "12050"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE1106",
+      "nombre": "Paradigmas de programación",
+      "creditos": 3,
+      "requisitos": [
+        "CE2103"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "BARBOZA ARTAVIA LUIS"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            },
+            {
+              "inicio": "40930",
+              "fin": "41120"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "GAMBOA RAMIREZ SANTIAGO"
+          ],
+          "horario": [
+            {
+              "inicio": "31700",
+              "fin": "31850"
+            },
+            {
+              "inicio": "11700",
+              "fin": "11850"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE1107",
+      "nombre": "Fundamentos de Arquitectura de Computadores",
+      "creditos": 4,
+      "requisitos": [
+        "EL2207"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "CHAVARRIA ZAMORA LUIS"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE1108",
+      "nombre": "Compiladores e intérpretes",
+      "creditos": 4,
+      "requisitos": [
+        "CE1107"
+      ],
+      "correquisitos": [
+        "CE4301"
+      ],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "LEITON JIMENEZ JASON"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21450"
+            },
+            {
+              "inicio": "41300",
+              "fin": "41450"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE1109",
+      "nombre": "Circuitos analógicos",
+      "creditos": 4,
+      "requisitos": [
+        "EL2207",
+        "SO4604"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "ARAYA RODRIGUEZ LISANDRO"
+          ],
+          "horario": [
+            {
+              "inicio": "31700",
+              "fin": "31850"
+            },
+            {
+              "inicio": "11700",
+              "fin": "11850"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE1110",
+      "nombre": "Análisis de señales mixtas",
+      "creditos": 4,
+      "requisitos": [
+        "EL2114",
+        "MA2105"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "CHAVARRIA ZAMORA LUIS"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            },
+            {
+              "inicio": "40930",
+              "fin": "41120"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE1111",
+      "nombre": "Análisis numérico para la Ingeniería",
+      "creditos": 3,
+      "requisitos": [
+        "MA2105"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "SOTO QUIROS JUAN PABLO"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE1112",
+      "nombre": "Taller de señales mixtas",
+      "creditos": 3,
+      "requisitos": [
+        "CE1109",
+        "CE1110"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "CHAVARRIA ZAMORA LUIS"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21650"
+            },
+            {
+              "inicio": "41500",
+              "fin": "41650"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE1113",
+      "nombre": "Sistemas empotrados",
+      "creditos": 3,
+      "requisitos": [
+        "CE4303"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "GONZALEZ GOMEZ JEFERSON"
+          ],
+          "horario": [
+            {
+              "inicio": "31500",
+              "fin": "31650"
+            },
+            {
+              "inicio": "11500",
+              "fin": "11650"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE1114",
+      "nombre": "Proyecto de aplicación de la ingeniería en computadores",
+      "creditos": 4,
+      "requisitos": [
+        "AE4208",
+        "CE1112",
+        "CE1113"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "NOGUERA MENA LUIS DIEGO"
+          ],
+          "horario": [
+            {
+              "inicio": "40730",
+              "fin": "41120"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE1115",
+      "nombre": "Seguridad de la información",
+      "creditos": 3,
+      "requisitos": [
+        "CE5301"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "VARGAS RIVERA ANDRES"
+          ],
+          "horario": [
+            {
+              "inicio": "31900",
+              "fin": "32050"
+            },
+            {
+              "inicio": "11900",
+              "fin": "12050"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE1116",
+      "nombre": "Diseño y calidad en productos tecnológicos",
+      "creditos": 4,
+      "requisitos": [
+        "CE3101",
+        "CE4301",
+        "PI5516"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "MADRIZ HUERTAS DANIEL"
+          ],
+          "horario": [
+            {
+              "inicio": "31900",
+              "fin": "32050"
+            },
+            {
+              "inicio": "11900",
+              "fin": "12050"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE1117",
+      "nombre": "Formulación y Gestión de Proyectos",
+      "creditos": 3,
+      "requisitos": [
+        "CE5301"
+      ],
+      "correquisitos": [
+        "CE1114"
+      ],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "SOLANO CORDERO JENNIER"
+          ],
+          "horario": [
+            {
+              "inicio": "01800",
+              "fin": "02150"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE2103",
+      "nombre": "Algoritmos y estructuras de datos II",
+      "creditos": 4,
+      "requisitos": [
+        "CE1103",
+        "CE1105"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "RAMIREZ HERRERA JOSE ISAAC"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "30920"
+            },
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE2201",
+      "nombre": "Laboratorio de circuitos eléctricos",
+      "creditos": 1,
+      "requisitos": [
+        "FI1202"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "ARAYA MARTINEZ LEONARDO"
+          ],
+          "horario": [
+            {
+              "inicio": "00930",
+              "fin": "01120"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "ARAYA MARTINEZ LEONARDO"
+          ],
+          "horario": [
+            {
+              "inicio": "00730",
+              "fin": "00920"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE3101",
+      "nombre": "Bases de datos",
+      "creditos": 4,
+      "requisitos": [
+        "CE1106"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "RIVERA MENESES MARCO"
+          ],
+          "horario": [
+            {
+              "inicio": "21900",
+              "fin": "22050"
+            },
+            {
+              "inicio": "41900",
+              "fin": "42050"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "HERNANDEZ VASQUEZ MARCO"
+          ],
+          "horario": [
+            {
+              "inicio": "21900",
+              "fin": "22050"
+            },
+            {
+              "inicio": "41900",
+              "fin": "42050"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE3201",
+      "nombre": "Taller de diseño digital",
+      "creditos": 2,
+      "requisitos": [
+        "CE2201"
+      ],
+      "correquisitos": [
+        "CE1107"
+      ],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "CALDERON PRADO KIMBERLY",
+            "GARCIA FERNANDEZ RONALD"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            },
+            {
+              "inicio": "50830",
+              "fin": "51020"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "CALDERON PRADO KIMBERLY",
+            "GARCIA FERNANDEZ RONALD"
+          ],
+          "horario": [
+            {
+              "inicio": "11300",
+              "fin": "11450"
+            },
+            {
+              "inicio": "51030",
+              "fin": "51220"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE4301",
+      "nombre": "Arquitectura de computadores I",
+      "creditos": 4,
+      "requisitos": [
+        "CE1107",
+        "CE3201"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "GONZALEZ GOMEZ JEFERSON"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21650"
+            },
+            {
+              "inicio": "41500",
+              "fin": "41650"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE4302",
+      "nombre": "Arquitectura de computadores II",
+      "creditos": 4,
+      "requisitos": [
+        "CE4301"
+      ],
+      "correquisitos": [
+        "CE4303"
+      ],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "BARBOZA ARTAVIA LUIS"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            },
+            {
+              "inicio": "11300",
+              "fin": "11450"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "CHAVARRIA ZAMORA LUIS"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21450"
+            },
+            {
+              "inicio": "41300",
+              "fin": "41450"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE4303",
+      "nombre": "Principios de sistemas operativos",
+      "creditos": 4,
+      "requisitos": [
+        "CE1108"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "BARBOZA ARTAVIA LUIS"
+          ],
+          "horario": [
+            {
+              "inicio": "31500",
+              "fin": "31650"
+            },
+            {
+              "inicio": "11500",
+              "fin": "11650"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE5301",
+      "nombre": "Redes de computadores",
+      "creditos": 4,
+      "requisitos": [
+        "CE1116",
+        "CE4303"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "TACSAN CHAVES RODOLFO"
+          ],
+          "horario": [
+            {
+              "inicio": "31700",
+              "fin": "31850"
+            },
+            {
+              "inicio": "11700",
+              "fin": "11850"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CE5601",
+      "nombre": "Trabajo final de graduación",
+      "creditos": 12,
+      "requisitos": [
+        "CE1111",
+        "CE1114",
+        "CE1115",
+        "CE1117",
+        "CE5801",
+        "CE5901",
+        "CS4402"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "SOLANO CORDERO JENNIER"
+          ],
+          "horario": [
+            {
+              "inicio": "31800",
+              "fin": "32050"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CI1407",
+      "nombre": "Habilidades de comunicación en Ingeniería",
+      "creditos": 2,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "GODINEZ ROJAS PAULETTE"
+          ],
+          "horario": [
+            {
+              "inicio": "00930",
+              "fin": "01220"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "MORALES SOLANO PAOLA NATALIA"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31550"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "MORALES GARAY SARAY"
+          ],
+          "horario": [
+            {
+              "inicio": "11300",
+              "fin": "11550"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "MORALES SOLANO PAOLA NATALIA"
+          ],
+          "horario": [
+            {
+              "inicio": "40730",
+              "fin": "41020"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "CAMACHO ARIAS ARIADNE"
+          ],
+          "horario": [
+            {
+              "inicio": "21230",
+              "fin": "21510"
+            }
+          ]
+        },
+        {
+          "grupo": 51,
+          "profesores": [
+            "CAMACHO ARIAS ARIADNE"
+          ],
+          "horario": [
+            {
+              "inicio": "11230",
+              "fin": "11510"
+            }
+          ]
+        },
+        {
+          "grupo": 85,
+          "profesores": [
+            "GODINEZ ROJAS PAULETTE"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31550"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CI3203",
+      "nombre": "Inglés especializado para ingenierías en computadores",
+      "creditos": 2,
+      "requisitos": [
+        "CI0205"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "JIMENEZ RODRIGUEZ ROXANA"
+          ],
+          "horario": [
+            {
+              "inicio": "11300",
+              "fin": "11550"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CS1502",
+      "nombre": "Introducción a la técnica ciencia y tecnología",
+      "creditos": 1,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "ORTIZ ACUÑA LEONARDO"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "BOJORGE MURILLO ALEXANDER"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "BOJORGE MURILLO ALEXANDER"
+          ],
+          "horario": [
+            {
+              "inicio": "21700",
+              "fin": "21850"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "BOJORGE MURILLO ALEXANDER"
+          ],
+          "horario": [
+            {
+              "inicio": "11500",
+              "fin": "11650"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "GARRO REYES MAURICIO"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "CAMPOS CHAVARRIA BENJAMIN"
+          ],
+          "horario": [
+            {
+              "inicio": "01705",
+              "fin": "01850"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CS2101",
+      "nombre": "Ambiente humano",
+      "creditos": 2,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "ORTIZ ALVAREZ JORGE ISAAC"
+          ],
+          "horario": [
+            {
+              "inicio": "40930",
+              "fin": "41220"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "RODRIGUEZ MORALES OSCAR"
+          ],
+          "horario": [
+            {
+              "inicio": "10930",
+              "fin": "11220"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "ORTIZ ALVAREZ JORGE ISAAC"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21220"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "ORTIZ ALVAREZ JORGE ISAAC"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21750"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "MURILLO SOLIS JAVIER"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31220"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "RODRIGUEZ MORALES OSCAR"
+          ],
+          "horario": [
+            {
+              "inicio": "00730",
+              "fin": "01020"
+            }
+          ]
+        },
+        {
+          "grupo": 7,
+          "profesores": [
+            "RODRIGUEZ MORALES OSCAR"
+          ],
+          "horario": [
+            {
+              "inicio": "01800",
+              "fin": "02050"
+            }
+          ]
+        },
+        {
+          "grupo": 8,
+          "profesores": [
+            "ROJAS MOLINA BETSY"
+          ],
+          "horario": [
+            {
+              "inicio": "11800",
+              "fin": "12050"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "CAMPOS CHAVARRIA BENJAMIN"
+          ],
+          "horario": [
+            {
+              "inicio": "11325",
+              "fin": "11605"
+            }
+          ]
+        },
+        {
+          "grupo": 51,
+          "profesores": [
+            "JAEN ESPAÑA ADRIAN"
+          ],
+          "horario": [
+            {
+              "inicio": "21610",
+              "fin": "21850"
+            }
+          ]
+        },
+        {
+          "grupo": 40,
+          "profesores": [
+            "ORTIZ ALVAREZ JORGE ISAAC"
+          ],
+          "horario": [
+            {
+              "inicio": "41500",
+              "fin": "41730"
+            }
+          ]
+        },
+        {
+          "grupo": 20,
+          "profesores": [
+            "ROJAS MOLINA BETSY"
+          ],
+          "horario": [
+            {
+              "inicio": "00900",
+              "fin": "01150"
+            }
+          ]
+        },
+        {
+          "grupo": 60,
+          "profesores": [
+            "RODRIGUEZ MORALES OSCAR"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31220"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CS3404",
+      "nombre": "Seminario de ética para la ingeniería",
+      "creditos": 2,
+      "requisitos": [
+        "CS2101"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "VARGAS ELIZONDO CELSO"
+          ],
+          "horario": [
+            {
+              "inicio": "10930",
+              "fin": "11220"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "BOJORGE MURILLO ALEXANDER"
+          ],
+          "horario": [
+            {
+              "inicio": "01800",
+              "fin": "02050"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "CASASOLA RIVERA WILMER"
+          ],
+          "horario": [
+            {
+              "inicio": "11800",
+              "fin": "12050"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "GARRO REYES MAURICIO"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21550"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "PRENDAS SOLANO JORGE"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21220"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "CEDEÑO CAMACHO MAURICIO"
+          ],
+          "horario": [
+            {
+              "inicio": "21800",
+              "fin": "22050"
+            }
+          ]
+        },
+        {
+          "grupo": 7,
+          "profesores": [
+            "CASASOLA RIVERA WILMER"
+          ],
+          "horario": [
+            {
+              "inicio": "21800",
+              "fin": "22050"
+            }
+          ]
+        },
+        {
+          "grupo": 8,
+          "profesores": [
+            "CASASOLA RIVERA WILMER"
+          ],
+          "horario": [
+            {
+              "inicio": "01800",
+              "fin": "02050"
+            }
+          ]
+        },
+        {
+          "grupo": 9,
+          "profesores": [
+            "PRENDAS SOLANO JORGE"
+          ],
+          "horario": [
+            {
+              "inicio": "10930",
+              "fin": "11220"
+            }
+          ]
+        },
+        {
+          "grupo": 10,
+          "profesores": [
+            "GARRO REYES MAURICIO"
+          ],
+          "horario": [
+            {
+              "inicio": "11300",
+              "fin": "11550"
+            }
+          ]
+        },
+        {
+          "grupo": 11,
+          "profesores": [
+            "GARRO REYES MAURICIO"
+          ],
+          "horario": [
+            {
+              "inicio": "40930",
+              "fin": "41220"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "GONZALEZ ZUÑIGA RODOLFO"
+          ],
+          "horario": [
+            {
+              "inicio": "00850",
+              "fin": "01130"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "CS4402",
+      "nombre": "Seminario de estudios costarricenses",
+      "creditos": 2,
+      "requisitos": [
+        "CS3404"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "MORA SANCHEZ AMILKAR"
+          ],
+          "horario": [
+            {
+              "inicio": "11500",
+              "fin": "11750"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "MOJICA MENDIETA FRANCISCO JAVIER"
+          ],
+          "horario": [
+            {
+              "inicio": "11300",
+              "fin": "11550"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "EDUARTE RODRIGUEZ DAVID"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21750"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "EDUARTE RODRIGUEZ DAVID"
+          ],
+          "horario": [
+            {
+              "inicio": "10930",
+              "fin": "11220"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "ROJAS MOLINA BETSY"
+          ],
+          "horario": [
+            {
+              "inicio": "10930",
+              "fin": "11220"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "EDUARTE RODRIGUEZ DAVID"
+          ],
+          "horario": [
+            {
+              "inicio": "31500",
+              "fin": "31750"
+            }
+          ]
+        },
+        {
+          "grupo": 7,
+          "profesores": [
+            "MESEN MONTENEGRO VLADIMIR"
+          ],
+          "horario": [
+            {
+              "inicio": "11800",
+              "fin": "12050"
+            }
+          ]
+        },
+        {
+          "grupo": 8,
+          "profesores": [
+            "CARMONA PINEDA MAIRIM"
+          ],
+          "horario": [
+            {
+              "inicio": "11300",
+              "fin": "11550"
+            }
+          ]
+        },
+        {
+          "grupo": 9,
+          "profesores": [
+            "FRANCESCHI SOJO KATTIA"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21220"
+            }
+          ]
+        },
+        {
+          "grupo": 10,
+          "profesores": [
+            "MOJICA MENDIETA FRANCISCO JAVIER"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21220"
+            }
+          ]
+        },
+        {
+          "grupo": 11,
+          "profesores": [
+            "FRANCESCHI SOJO KATTIA"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31220"
+            }
+          ]
+        },
+        {
+          "grupo": 12,
+          "profesores": [
+            "EDUARTE RODRIGUEZ DAVID"
+          ],
+          "horario": [
+            {
+              "inicio": "11500",
+              "fin": "11750"
+            }
+          ]
+        },
+        {
+          "grupo": 13,
+          "profesores": [
+            "MESEN MONTENEGRO VLADIMIR"
+          ],
+          "horario": [
+            {
+              "inicio": "31800",
+              "fin": "32050"
+            }
+          ]
+        },
+        {
+          "grupo": 14,
+          "profesores": [
+            "FRANCESCHI SOJO KATTIA"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21550"
+            }
+          ]
+        },
+        {
+          "grupo": 15,
+          "profesores": [
+            "MENESES MARIN GUILLERMO"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21220"
+            }
+          ]
+        },
+        {
+          "grupo": 16,
+          "profesores": [
+            "CARMONA PINEDA MAIRIM"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31550"
+            }
+          ]
+        },
+        {
+          "grupo": 17,
+          "profesores": [
+            "MORA SANCHEZ AMILKAR"
+          ],
+          "horario": [
+            {
+              "inicio": "41300",
+              "fin": "41550"
+            }
+          ]
+        },
+        {
+          "grupo": 18,
+          "profesores": [
+            "ROJAS MOLINA BETSY"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21220"
+            }
+          ]
+        },
+        {
+          "grupo": 19,
+          "profesores": [
+            "MENESES MARIN GUILLERMO"
+          ],
+          "horario": [
+            {
+              "inicio": "31500",
+              "fin": "31750"
+            }
+          ]
+        },
+        {
+          "grupo": 20,
+          "profesores": [
+            "MORA SANCHEZ AMILKAR"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21750"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "ALARCON ZAMORA SHIRLEY",
+            "JAEN ESPAÑA ADRIAN"
+          ],
+          "horario": [
+            {
+              "inicio": "30850",
+              "fin": "31130"
+            }
+          ]
+        },
+        {
+          "grupo": 51,
+          "profesores": [
+            "MORA BENAVIDES BERENICE"
+          ],
+          "horario": [
+            {
+              "inicio": "11705",
+              "fin": "11945"
+            }
+          ]
+        },
+        {
+          "grupo": 52,
+          "profesores": [
+            "CAMPOS CHAVARRIA BENJAMIN"
+          ],
+          "horario": [
+            {
+              "inicio": "31325",
+              "fin": "31605"
+            }
+          ]
+        },
+        {
+          "grupo": 40,
+          "profesores": [
+            "MENESES MARIN GUILLERMO"
+          ],
+          "horario": [
+            {
+              "inicio": "21730",
+              "fin": "22015"
+            }
+          ]
+        },
+        {
+          "grupo": 90,
+          "profesores": [
+            "MURILLO SOLIS JAVIER"
+          ],
+          "horario": [
+            {
+              "inicio": "00700",
+              "fin": "00950"
+            }
+          ]
+        },
+        {
+          "grupo": 60,
+          "profesores": [
+            "RODRIGUEZ MORALES OSCAR"
+          ],
+          "horario": [
+            {
+              "inicio": "31800",
+              "fin": "32050"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "EL2113",
+      "nombre": "Circuitos eléctricos en corriente continua",
+      "creditos": 4,
+      "requisitos": [
+        "FI1101",
+        "MA1102"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "VEGA CASTILLO PAOLA"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            },
+            {
+              "inicio": "40930",
+              "fin": "41120"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "PEREZ RODRIGUEZ JAVIER"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "PICADO GARCIA FABIAN ALBERTO"
+          ],
+          "horario": [
+            {
+              "inicio": "00730",
+              "fin": "01120"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "HERNANDEZ RIVERA MIGUEL"
+          ],
+          "horario": [
+            {
+              "inicio": "00730",
+              "fin": "00920"
+            },
+            {
+              "inicio": "20730",
+              "fin": "20920"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "RODRIGUEZ VARGAS PABLO CESAR"
+          ],
+          "horario": [
+            {
+              "inicio": "21610",
+              "fin": "21755"
+            },
+            {
+              "inicio": "40755",
+              "fin": "40940"
+            }
+          ]
+        },
+        {
+          "grupo": 20,
+          "profesores": [
+            "MORALES HERNANDEZ SERGIO"
+          ],
+          "horario": [
+            {
+              "inicio": "41300",
+              "fin": "41650"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "EL2114",
+      "nombre": "Circuitos eléctricos en corriente alterna",
+      "creditos": 4,
+      "requisitos": [
+        "EL2113"
+      ],
+      "correquisitos": [
+        "EL2207"
+      ],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "CHINCHILLA VARGAS ERICK GUSTAVO"
+          ],
+          "horario": [
+            {
+              "inicio": "21700",
+              "fin": "21850"
+            },
+            {
+              "inicio": "41700",
+              "fin": "41850"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "QUIROS SOLANO WILLIAM"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "VALVERDE GARDELA HEBERTH"
+          ],
+          "horario": [
+            {
+              "inicio": "20730",
+              "fin": "20920"
+            },
+            {
+              "inicio": "40730",
+              "fin": "40920"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "HERRERO CHAVARRIA FELIPE"
+          ],
+          "horario": [
+            {
+              "inicio": "31700",
+              "fin": "31850"
+            },
+            {
+              "inicio": "11700",
+              "fin": "11850"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "GUADAMUZ BRENES SAUL"
+          ],
+          "horario": [
+            {
+              "inicio": "01610",
+              "fin": "01755"
+            },
+            {
+              "inicio": "11325",
+              "fin": "11510"
+            }
+          ]
+        },
+        {
+          "grupo": 20,
+          "profesores": [
+            "ARAYA RODRIGUEZ LISANDRO"
+          ],
+          "horario": [
+            {
+              "inicio": "40800",
+              "fin": "41150"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "EL2207",
+      "nombre": "Elementos activos",
+      "creditos": 4,
+      "requisitos": [
+        "EL2113"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "SEGURA QUIROS CARLOS"
+          ],
+          "horario": [
+            {
+              "inicio": "31500",
+              "fin": "31650"
+            },
+            {
+              "inicio": "11500",
+              "fin": "11650"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "MONTERO RODRIGUEZ JUAN JOSE"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "30920"
+            },
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "VEGA CASTILLO PAOLA"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21650"
+            },
+            {
+              "inicio": "41500",
+              "fin": "41650"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "PINNOCK CHACON MAC ALFRED"
+          ],
+          "horario": [
+            {
+              "inicio": "21700",
+              "fin": "21850"
+            },
+            {
+              "inicio": "40930",
+              "fin": "41120"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "CASTRO BADILLA GUILLERMO"
+          ],
+          "horario": [
+            {
+              "inicio": "21230",
+              "fin": "21605"
+            }
+          ]
+        },
+        {
+          "grupo": 20,
+          "profesores": [
+            "PHILLIPS BRENES HAYDEN ANTHONY"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            },
+            {
+              "inicio": "11300",
+              "fin": "11450"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "FI1101",
+      "nombre": "Física general I",
+      "creditos": 3,
+      "requisitos": [
+        "MA1102"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "MURILLO SALAZAR DENNIS"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "30920"
+            },
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "MURILLO ZUMBADO GUSTAVO"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "30920"
+            },
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "PINEDA LIZANO JUAN JOSE"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "ELIZONDO ZUÑIGA JENNIFER"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "ELIZONDO ZUÑIGA JENNIFER"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            },
+            {
+              "inicio": "11300",
+              "fin": "11450"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "VARGAS BLANCO IVAN"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            },
+            {
+              "inicio": "11300",
+              "fin": "11450"
+            }
+          ]
+        },
+        {
+          "grupo": 7,
+          "profesores": [
+            "PINEDA LIZANO JUAN JOSE"
+          ],
+          "horario": [
+            {
+              "inicio": "31500",
+              "fin": "31650"
+            },
+            {
+              "inicio": "11500",
+              "fin": "11650"
+            }
+          ]
+        },
+        {
+          "grupo": 8,
+          "profesores": [
+            "CORRALES QUESADA ESTEBAN"
+          ],
+          "horario": [
+            {
+              "inicio": "31500",
+              "fin": "31650"
+            },
+            {
+              "inicio": "11500",
+              "fin": "11650"
+            }
+          ]
+        },
+        {
+          "grupo": 9,
+          "profesores": [
+            "CORRALES QUESADA ESTEBAN"
+          ],
+          "horario": [
+            {
+              "inicio": "31700",
+              "fin": "31850"
+            },
+            {
+              "inicio": "11700",
+              "fin": "11850"
+            }
+          ]
+        },
+        {
+          "grupo": 11,
+          "profesores": [
+            "MOYA SERRANO ROY DAVID"
+          ],
+          "horario": [
+            {
+              "inicio": "20730",
+              "fin": "20920"
+            },
+            {
+              "inicio": "40730",
+              "fin": "40920"
+            }
+          ]
+        },
+        {
+          "grupo": 13,
+          "profesores": [
+            "CAMBRONERO CORDERO MICHAEL"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            },
+            {
+              "inicio": "40930",
+              "fin": "41120"
+            }
+          ]
+        },
+        {
+          "grupo": 14,
+          "profesores": [
+            "MONTERO ZELEDON ERNESTO"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            },
+            {
+              "inicio": "40930",
+              "fin": "41120"
+            }
+          ]
+        },
+        {
+          "grupo": 15,
+          "profesores": [
+            "SEGURA ZARATE ANA YANCY"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21450"
+            },
+            {
+              "inicio": "41300",
+              "fin": "41450"
+            }
+          ]
+        },
+        {
+          "grupo": 17,
+          "profesores": [
+            "ROJAS PEREZ FRANCISCO"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21650"
+            },
+            {
+              "inicio": "41500",
+              "fin": "41650"
+            }
+          ]
+        },
+        {
+          "grupo": 18,
+          "profesores": [
+            "SEGURA ZARATE ANA YANCY"
+          ],
+          "horario": [
+            {
+              "inicio": "21700",
+              "fin": "21850"
+            },
+            {
+              "inicio": "41700",
+              "fin": "41850"
+            }
+          ]
+        },
+        {
+          "grupo": 19,
+          "profesores": [
+            "ROJAS PEREZ FRANCISCO"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 20,
+          "profesores": [
+            "SEGURA ZARATE ANA YANCY"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            },
+            {
+              "inicio": "40930",
+              "fin": "41120"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "ALVARADO ORTEGA ROMMEL"
+          ],
+          "horario": [
+            {
+              "inicio": "10700",
+              "fin": "10845"
+            },
+            {
+              "inicio": "40700",
+              "fin": "40845"
+            }
+          ]
+        },
+        {
+          "grupo": 51,
+          "profesores": [
+            "SEQUEIRA CASTRO DAVID"
+          ],
+          "horario": [
+            {
+              "inicio": "21230",
+              "fin": "21415"
+            },
+            {
+              "inicio": "41230",
+              "fin": "41415"
+            }
+          ]
+        },
+        {
+          "grupo": 35,
+          "profesores": [
+            "CORDERO GARCIA IVAN GABRIEL"
+          ],
+          "horario": [
+            {
+              "inicio": "21000",
+              "fin": "21150"
+            },
+            {
+              "inicio": "41000",
+              "fin": "41150"
+            }
+          ]
+        },
+        {
+          "grupo": 36,
+          "profesores": [
+            "LACY MORA GERARDO"
+          ],
+          "horario": [
+            {
+              "inicio": "20800",
+              "fin": "20950"
+            },
+            {
+              "inicio": "40800",
+              "fin": "40950"
+            }
+          ]
+        },
+        {
+          "grupo": 60,
+          "profesores": [
+            "CASTILLO FALLAS JOSE CARLOS"
+          ],
+          "horario": [
+            {
+              "inicio": "20730",
+              "fin": "20920"
+            },
+            {
+              "inicio": "40730",
+              "fin": "40920"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "FI1102",
+      "nombre": "Física general II",
+      "creditos": 3,
+      "requisitos": [
+        "FI1101"
+      ],
+      "correquisitos": [
+        "MA1102"
+      ],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "LOBO ZAMORA JUAN CARLOS"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "30920"
+            },
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "VARGAS BLANCO IVAN"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "AMADOR JARA ALVARO"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "PINEDA LIZANO JUAN JOSE"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            },
+            {
+              "inicio": "11300",
+              "fin": "11450"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "PINEDA LIZANO JUAN JOSE"
+          ],
+          "horario": [
+            {
+              "inicio": "31700",
+              "fin": "31850"
+            },
+            {
+              "inicio": "11700",
+              "fin": "11850"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "MURILLO ZUMBADO GUSTAVO"
+          ],
+          "horario": [
+            {
+              "inicio": "20730",
+              "fin": "20920"
+            },
+            {
+              "inicio": "40730",
+              "fin": "40920"
+            }
+          ]
+        },
+        {
+          "grupo": 7,
+          "profesores": [
+            "PEREZ HIDALGO JOSE ESTEBAN"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            },
+            {
+              "inicio": "40930",
+              "fin": "41120"
+            }
+          ]
+        },
+        {
+          "grupo": 8,
+          "profesores": [
+            "OREAMUNO MADRIZ RAFAEL"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21450"
+            },
+            {
+              "inicio": "41300",
+              "fin": "41450"
+            }
+          ]
+        },
+        {
+          "grupo": 9,
+          "profesores": [
+            "CORRALES QUESADA ESTEBAN"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21650"
+            },
+            {
+              "inicio": "41500",
+              "fin": "41650"
+            }
+          ]
+        },
+        {
+          "grupo": 10,
+          "profesores": [
+            "SOTO CHINCHILLA YERRY"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "30920"
+            },
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        },
+        {
+          "grupo": 11,
+          "profesores": [
+            "MURILLO ZUMBADO GUSTAVO"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "ALVARADO ORTEGA ROMMEL"
+          ],
+          "horario": [
+            {
+              "inicio": "10945",
+              "fin": "11130"
+            },
+            {
+              "inicio": "40945",
+              "fin": "41130"
+            }
+          ]
+        },
+        {
+          "grupo": 51,
+          "profesores": [
+            "GAMBOA ALFARO MARVIN RICARDO"
+          ],
+          "horario": [
+            {
+              "inicio": "31800",
+              "fin": "31945"
+            },
+            {
+              "inicio": "11800",
+              "fin": "11945"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "FI1201",
+      "nombre": "Laboratorio física general I",
+      "creditos": 1,
+      "requisitos": [],
+      "correquisitos": [
+        "FI1101"
+      ],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "SEVILLA QUESADA EVAR"
+          ],
+          "horario": [
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "JIMENEZ CARBALLO CARLOS ADRIAN"
+          ],
+          "horario": [
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "CAMPOS RODRIGUEZ MELANIA"
+          ],
+          "horario": [
+            {
+              "inicio": "11300",
+              "fin": "11450"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "CAMPOS RODRIGUEZ MELANIA"
+          ],
+          "horario": [
+            {
+              "inicio": "11500",
+              "fin": "11650"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "SEGURA CARVAJAL MARCOS"
+          ],
+          "horario": [
+            {
+              "inicio": "11700",
+              "fin": "11850"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "PEREZ HIDALGO JOSE ESTEBAN"
+          ],
+          "horario": [
+            {
+              "inicio": "20730",
+              "fin": "20920"
+            }
+          ]
+        },
+        {
+          "grupo": 7,
+          "profesores": [
+            "JIMENEZ CARBALLO CARLOS ADRIAN"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            }
+          ]
+        },
+        {
+          "grupo": 8,
+          "profesores": [
+            "MAYORGA ESPINOZA CARLOS"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21450"
+            }
+          ]
+        },
+        {
+          "grupo": 9,
+          "profesores": [
+            "SEGURA CARVAJAL MARCOS"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21650"
+            }
+          ]
+        },
+        {
+          "grupo": 10,
+          "profesores": [
+            "CORRALES QUESADA ESTEBAN"
+          ],
+          "horario": [
+            {
+              "inicio": "21700",
+              "fin": "21850"
+            }
+          ]
+        },
+        {
+          "grupo": 11,
+          "profesores": [
+            "ALFARO ALVARADO JOSE ABRAHAN"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "30920"
+            }
+          ]
+        },
+        {
+          "grupo": 12,
+          "profesores": [
+            "MONTERO ZELEDON ERNESTO"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            }
+          ]
+        },
+        {
+          "grupo": 14,
+          "profesores": [
+            "MORALES MUÑOZ WALTER"
+          ],
+          "horario": [
+            {
+              "inicio": "31500",
+              "fin": "31650"
+            }
+          ]
+        },
+        {
+          "grupo": 15,
+          "profesores": [
+            "SEGURA CARVAJAL MARCOS"
+          ],
+          "horario": [
+            {
+              "inicio": "31700",
+              "fin": "31850"
+            }
+          ]
+        },
+        {
+          "grupo": 16,
+          "profesores": [
+            "MORALES MUÑOZ WALTER"
+          ],
+          "horario": [
+            {
+              "inicio": "40730",
+              "fin": "40920"
+            }
+          ]
+        },
+        {
+          "grupo": 17,
+          "profesores": [
+            "MORALES MUÑOZ WALTER"
+          ],
+          "horario": [
+            {
+              "inicio": "40930",
+              "fin": "41120"
+            }
+          ]
+        },
+        {
+          "grupo": 18,
+          "profesores": [
+            "CORRALES QUESADA ESTEBAN"
+          ],
+          "horario": [
+            {
+              "inicio": "41300",
+              "fin": "41450"
+            }
+          ]
+        },
+        {
+          "grupo": 19,
+          "profesores": [
+            "SOLANO PIEDRA RICARDO ADOLFO"
+          ],
+          "horario": [
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 22,
+          "profesores": [
+            "ELIZONDO ZUÑIGA JENNIFER"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            }
+          ]
+        },
+        {
+          "grupo": 23,
+          "profesores": [
+            "CAMBRONERO CORDERO MICHAEL"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21650"
+            }
+          ]
+        },
+        {
+          "grupo": 24,
+          "profesores": [
+            "CAMBRONERO CORDERO MICHAEL"
+          ],
+          "horario": [
+            {
+              "inicio": "21700",
+              "fin": "21850"
+            }
+          ]
+        },
+        {
+          "grupo": 25,
+          "profesores": [
+            "SOLANO PIEDRA RICARDO ADOLFO"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            }
+          ]
+        },
+        {
+          "grupo": 26,
+          "profesores": [
+            "MORALES MUÑOZ WALTER"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            }
+          ]
+        },
+        {
+          "grupo": 27,
+          "profesores": [
+            "ALFARO ALVARADO JOSE ABRAHAN"
+          ],
+          "horario": [
+            {
+              "inicio": "31700",
+              "fin": "31850"
+            }
+          ]
+        },
+        {
+          "grupo": 29,
+          "profesores": [
+            "OREAMUNO MADRIZ RAFAEL"
+          ],
+          "horario": [
+            {
+              "inicio": "11300",
+              "fin": "11450"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "ALVARADO ORTEGA ROMMEL"
+          ],
+          "horario": [
+            {
+              "inicio": "21800",
+              "fin": "21945"
+            }
+          ]
+        },
+        {
+          "grupo": 51,
+          "profesores": [
+            "GAMBOA ALFARO MARVIN RICARDO",
+            "SEQUEIRA CASTRO DAVID"
+          ],
+          "horario": [
+            {
+              "inicio": "11230",
+              "fin": "11415"
+            }
+          ]
+        },
+        {
+          "grupo": 52,
+          "profesores": [
+            "ALVARADO ORTEGA ROMMEL",
+            "SEQUEIRA CASTRO DAVID"
+          ],
+          "horario": [
+            {
+              "inicio": "11420",
+              "fin": "11605"
+            }
+          ]
+        },
+        {
+          "grupo": 35,
+          "profesores": [
+            "CORDERO GARCIA IVAN GABRIEL"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21450"
+            }
+          ]
+        },
+        {
+          "grupo": 36,
+          "profesores": [
+            "SEVILLA QUESADA EVAR"
+          ],
+          "horario": [
+            {
+              "inicio": "31000",
+              "fin": "31150"
+            }
+          ]
+        },
+        {
+          "grupo": 60,
+          "profesores": [
+            "CASTILLO FALLAS JOSE CARLOS"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21450"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "FI1202",
+      "nombre": "Laboratorio física general II",
+      "creditos": 1,
+      "requisitos": [
+        "FI1201"
+      ],
+      "correquisitos": [
+        "FI1102"
+      ],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "ARAYA SOLANO LUIS ALONSO"
+          ],
+          "horario": [
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "ARAYA SOLANO LUIS ALONSO"
+          ],
+          "horario": [
+            {
+              "inicio": "11300",
+              "fin": "11450"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "SEVILLA QUESADA EVAR"
+          ],
+          "horario": [
+            {
+              "inicio": "11700",
+              "fin": "11850"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "JIMENEZ CARBALLO CARLOS ADRIAN"
+          ],
+          "horario": [
+            {
+              "inicio": "20730",
+              "fin": "20920"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "MURILLO ZUMBADO GUSTAVO"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "OREAMUNO MADRIZ RAFAEL"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21650"
+            }
+          ]
+        },
+        {
+          "grupo": 7,
+          "profesores": [
+            "MORALES MUÑOZ WALTER"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            }
+          ]
+        },
+        {
+          "grupo": 8,
+          "profesores": [
+            "MORALES MUÑOZ WALTER"
+          ],
+          "horario": [
+            {
+              "inicio": "41300",
+              "fin": "41450"
+            }
+          ]
+        },
+        {
+          "grupo": 9,
+          "profesores": [
+            "ROJAS ROJAS LAURA"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21450"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "GAMBOA ALFARO MARVIN RICARDO"
+          ],
+          "horario": [
+            {
+              "inicio": "20945",
+              "fin": "21130"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "MA0101",
+      "nombre": "Matemática general",
+      "creditos": 2,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "SOLIS PALMA ANGIE"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "30920"
+            },
+            {
+              "inicio": "10730",
+              "fin": "11020"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "VEGA VASQUEZ ARTURO"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11220"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "CORDERO QUIROS MARCIAL"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            },
+            {
+              "inicio": "11300",
+              "fin": "11550"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "JIMENEZ MADRIGAL JORGE"
+          ],
+          "horario": [
+            {
+              "inicio": "31500",
+              "fin": "31750"
+            },
+            {
+              "inicio": "11500",
+              "fin": "11650"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "RODRIGUEZ CASTRO BRYAN"
+          ],
+          "horario": [
+            {
+              "inicio": "31600",
+              "fin": "31750"
+            },
+            {
+              "inicio": "11600",
+              "fin": "11850"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "CORDERO QUIROS MARCIAL"
+          ],
+          "horario": [
+            {
+              "inicio": "31800",
+              "fin": "31950"
+            },
+            {
+              "inicio": "11800",
+              "fin": "12050"
+            }
+          ]
+        },
+        {
+          "grupo": 7,
+          "profesores": [
+            "SANCHEZ FERNANDEZ IVONNE"
+          ],
+          "horario": [
+            {
+              "inicio": "20730",
+              "fin": "20920"
+            },
+            {
+              "inicio": "40730",
+              "fin": "41020"
+            }
+          ]
+        },
+        {
+          "grupo": 8,
+          "profesores": [
+            "MARRERO CALVO MARCELA"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21220"
+            },
+            {
+              "inicio": "40930",
+              "fin": "41120"
+            }
+          ]
+        },
+        {
+          "grupo": 9,
+          "profesores": [
+            "QUESADA VILLALOBOS LOURDES"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21550"
+            },
+            {
+              "inicio": "41300",
+              "fin": "41450"
+            }
+          ]
+        },
+        {
+          "grupo": 10,
+          "profesores": [
+            "AZOFEIFA CUBERO ROBERTO"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21750"
+            },
+            {
+              "inicio": "41500",
+              "fin": "41650"
+            }
+          ]
+        },
+        {
+          "grupo": 11,
+          "profesores": [
+            "PRENDAS ROJAS JUAN PABLO"
+          ],
+          "horario": [
+            {
+              "inicio": "21600",
+              "fin": "21850"
+            },
+            {
+              "inicio": "41700",
+              "fin": "41850"
+            }
+          ]
+        },
+        {
+          "grupo": 12,
+          "profesores": [
+            "SOLANO VARELA DANIEL JESUS"
+          ],
+          "horario": [
+            {
+              "inicio": "50730",
+              "fin": "51220"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "JIMENEZ CESPEDES RODOLFO"
+          ],
+          "horario": [
+            {
+              "inicio": "11230",
+              "fin": "11415"
+            },
+            {
+              "inicio": "21230",
+              "fin": "21510"
+            }
+          ]
+        },
+        {
+          "grupo": 51,
+          "profesores": [
+            "GONZALEZ VARGAS KARINA"
+          ],
+          "horario": [
+            {
+              "inicio": "30700",
+              "fin": "30940"
+            },
+            {
+              "inicio": "20700",
+              "fin": "20845"
+            }
+          ]
+        },
+        {
+          "grupo": 52,
+          "profesores": [
+            "GONZALEZ VARGAS KARINA"
+          ],
+          "horario": [
+            {
+              "inicio": "30945",
+              "fin": "31130"
+            },
+            {
+              "inicio": "20850",
+              "fin": "21130"
+            }
+          ]
+        },
+        {
+          "grupo": 53,
+          "profesores": [
+            "NAVARRO AGUIRRE JESSICA"
+          ],
+          "horario": [
+            {
+              "inicio": "20850",
+              "fin": "21130"
+            },
+            {
+              "inicio": "40945",
+              "fin": "41130"
+            }
+          ]
+        },
+        {
+          "grupo": 54,
+          "profesores": [
+            "CARRERA RETANA LUIS ERNESTO"
+          ],
+          "horario": [
+            {
+              "inicio": "31610",
+              "fin": "31755"
+            },
+            {
+              "inicio": "11610",
+              "fin": "11850"
+            }
+          ]
+        },
+        {
+          "grupo": 55,
+          "profesores": [
+            "SABORIO CORDERO NATALIA"
+          ],
+          "horario": [
+            {
+              "inicio": "21610",
+              "fin": "21850"
+            },
+            {
+              "inicio": "40700",
+              "fin": "40845"
+            }
+          ]
+        },
+        {
+          "grupo": 40,
+          "profesores": [
+            "ESQUIVEL SAMUDIO JEISON"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21220"
+            },
+            {
+              "inicio": "40930",
+              "fin": "41120"
+            }
+          ]
+        },
+        {
+          "grupo": 90,
+          "profesores": [
+            "GARCIA DELGADO PAULO"
+          ],
+          "horario": [
+            {
+              "inicio": "30700",
+              "fin": "30850"
+            },
+            {
+              "inicio": "10700",
+              "fin": "10950"
+            }
+          ]
+        },
+        {
+          "grupo": 91,
+          "profesores": [
+            "RODRIGUEZ BUSTOS KENDALL"
+          ],
+          "horario": [
+            {
+              "inicio": "30700",
+              "fin": "30850"
+            },
+            {
+              "inicio": "10700",
+              "fin": "10950"
+            }
+          ]
+        },
+        {
+          "grupo": 60,
+          "profesores": [
+            "LOPEZ MORA VERONICA"
+          ],
+          "horario": [
+            {
+              "inicio": "31030",
+              "fin": "31220"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11220"
+            }
+          ]
+        },
+        {
+          "grupo": 61,
+          "profesores": [
+            "WYNTA BANTON RANDY YADIR"
+          ],
+          "horario": [
+            {
+              "inicio": "31030",
+              "fin": "31220"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11220"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "MA1102",
+      "nombre": "Cálculo diferencial e integral",
+      "creditos": 4,
+      "requisitos": [
+        "MA0101"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "QUESADA VILLALOBOS LOURDES"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "30920"
+            },
+            {
+              "inicio": "10730",
+              "fin": "11020"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "CORDERO QUIROS MARCIAL"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "31020"
+            },
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "MASIS FLORES DAVID"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31220"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "PAEZ PAEZ CRISTIAN"
+          ],
+          "horario": [
+            {
+              "inicio": "31030",
+              "fin": "31220"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11220"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "RODRIGUEZ GRANADOS NATALIA"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            },
+            {
+              "inicio": "11300",
+              "fin": "11550"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "PARRA SALAZAR EDWARD"
+          ],
+          "horario": [
+            {
+              "inicio": "31500",
+              "fin": "31750"
+            },
+            {
+              "inicio": "11500",
+              "fin": "11650"
+            }
+          ]
+        },
+        {
+          "grupo": 7,
+          "profesores": [
+            "MASIS FLORES DAVID"
+          ],
+          "horario": [
+            {
+              "inicio": "31600",
+              "fin": "31750"
+            },
+            {
+              "inicio": "11600",
+              "fin": "11850"
+            }
+          ]
+        },
+        {
+          "grupo": 8,
+          "profesores": [
+            "QUESADA VILLALOBOS LOURDES"
+          ],
+          "horario": [
+            {
+              "inicio": "31600",
+              "fin": "31750"
+            },
+            {
+              "inicio": "11500",
+              "fin": "11750"
+            }
+          ]
+        },
+        {
+          "grupo": 9,
+          "profesores": [
+            "ESQUIVEL SAMUDIO JEISON"
+          ],
+          "horario": [
+            {
+              "inicio": "31700",
+              "fin": "31850"
+            },
+            {
+              "inicio": "11700",
+              "fin": "11950"
+            }
+          ]
+        },
+        {
+          "grupo": 10,
+          "profesores": [
+            "FALLAS MONGE JUAN JOSE"
+          ],
+          "horario": [
+            {
+              "inicio": "31800",
+              "fin": "31950"
+            },
+            {
+              "inicio": "11800",
+              "fin": "12050"
+            }
+          ]
+        },
+        {
+          "grupo": 11,
+          "profesores": [
+            "PAEZ PAEZ CRISTIAN"
+          ],
+          "horario": [
+            {
+              "inicio": "20730",
+              "fin": "20920"
+            },
+            {
+              "inicio": "40730",
+              "fin": "41020"
+            }
+          ]
+        },
+        {
+          "grupo": 12,
+          "profesores": [
+            "JIMENEZ MADRIGAL JORGE"
+          ],
+          "horario": [
+            {
+              "inicio": "20730",
+              "fin": "21020"
+            },
+            {
+              "inicio": "40730",
+              "fin": "40920"
+            }
+          ]
+        },
+        {
+          "grupo": 13,
+          "profesores": [
+            "PARRA SALAZAR EDWARD"
+          ],
+          "horario": [
+            {
+              "inicio": "21030",
+              "fin": "21220"
+            },
+            {
+              "inicio": "40930",
+              "fin": "41220"
+            }
+          ]
+        },
+        {
+          "grupo": 14,
+          "profesores": [
+            "MORA PICADO LUIS FERNANDO"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21220"
+            },
+            {
+              "inicio": "41030",
+              "fin": "41220"
+            }
+          ]
+        },
+        {
+          "grupo": 15,
+          "profesores": [
+            "NUÑEZ VANEGAS FELIX"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21550"
+            },
+            {
+              "inicio": "41300",
+              "fin": "41450"
+            }
+          ]
+        },
+        {
+          "grupo": 16,
+          "profesores": [
+            "MORA PICADO LUIS FERNANDO"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21750"
+            },
+            {
+              "inicio": "41500",
+              "fin": "41650"
+            }
+          ]
+        },
+        {
+          "grupo": 17,
+          "profesores": [
+            "GUTIERREZ MONTENEGRO MARCO VINICIO"
+          ],
+          "horario": [
+            {
+              "inicio": "21600",
+              "fin": "21850"
+            },
+            {
+              "inicio": "41600",
+              "fin": "41750"
+            }
+          ]
+        },
+        {
+          "grupo": 18,
+          "profesores": [
+            "PARRA SALAZAR EDWARD"
+          ],
+          "horario": [
+            {
+              "inicio": "21700",
+              "fin": "21950"
+            },
+            {
+              "inicio": "41700",
+              "fin": "41850"
+            }
+          ]
+        },
+        {
+          "grupo": 19,
+          "profesores": [
+            "MORA CASASOLA MARIA FERNANDA"
+          ],
+          "horario": [
+            {
+              "inicio": "21700",
+              "fin": "21950"
+            },
+            {
+              "inicio": "41700",
+              "fin": "41850"
+            }
+          ]
+        },
+        {
+          "grupo": 20,
+          "profesores": [
+            "LOPEZ MORA VERONICA"
+          ],
+          "horario": [
+            {
+              "inicio": "21800",
+              "fin": "22050"
+            },
+            {
+              "inicio": "41800",
+              "fin": "41950"
+            }
+          ]
+        },
+        {
+          "grupo": 21,
+          "profesores": [
+            "JIMENEZ MADRIGAL JORGE"
+          ],
+          "horario": [
+            {
+              "inicio": "50730",
+              "fin": "51220"
+            }
+          ]
+        },
+        {
+          "grupo": 22,
+          "profesores": [
+            "SANCHEZ FERNANDEZ IVONNE"
+          ],
+          "horario": [
+            {
+              "inicio": "21600",
+              "fin": "21850"
+            },
+            {
+              "inicio": "41600",
+              "fin": "41750"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "MEJIAS RAMIREZ ELVIS ANDRES"
+          ],
+          "horario": [
+            {
+              "inicio": "31420",
+              "fin": "31605"
+            },
+            {
+              "inicio": "21420",
+              "fin": "21700"
+            }
+          ]
+        },
+        {
+          "grupo": 51,
+          "profesores": [
+            "GUILLEN PEREZ CARLOS ENRIQUE"
+          ],
+          "horario": [
+            {
+              "inicio": "20700",
+              "fin": "20940"
+            },
+            {
+              "inicio": "40700",
+              "fin": "40845"
+            }
+          ]
+        },
+        {
+          "grupo": 52,
+          "profesores": [
+            "GUILLEN PEREZ CARLOS ENRIQUE"
+          ],
+          "horario": [
+            {
+              "inicio": "21230",
+              "fin": "21510"
+            },
+            {
+              "inicio": "41230",
+              "fin": "41415"
+            }
+          ]
+        },
+        {
+          "grupo": 53,
+          "profesores": [
+            "FREER PANIAGUA DYLANA"
+          ],
+          "horario": [
+            {
+              "inicio": "30850",
+              "fin": "31130"
+            },
+            {
+              "inicio": "20945",
+              "fin": "21130"
+            }
+          ]
+        },
+        {
+          "grupo": 54,
+          "profesores": [
+            "SABORIO CORDERO NATALIA"
+          ],
+          "horario": [
+            {
+              "inicio": "31610",
+              "fin": "31850"
+            },
+            {
+              "inicio": "41420",
+              "fin": "41605"
+            }
+          ]
+        },
+        {
+          "grupo": 40,
+          "profesores": [
+            "VILLALOBOS ARIAS MARIO"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21550"
+            },
+            {
+              "inicio": "41300",
+              "fin": "41450"
+            }
+          ]
+        },
+        {
+          "grupo": 90,
+          "profesores": [
+            "RAMIREZ BOGANTES MELVIN"
+          ],
+          "horario": [
+            {
+              "inicio": "30900",
+              "fin": "31150"
+            },
+            {
+              "inicio": "11000",
+              "fin": "11150"
+            }
+          ]
+        },
+        {
+          "grupo": 91,
+          "profesores": [
+            "RAMIREZ BOGANTES MELVIN"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            },
+            {
+              "inicio": "11300",
+              "fin": "11550"
+            }
+          ]
+        },
+        {
+          "grupo": 60,
+          "profesores": [
+            "WYNTA BANTON RANDY YADIR"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21220"
+            },
+            {
+              "inicio": "40930",
+              "fin": "41120"
+            }
+          ]
+        },
+        {
+          "grupo": 61,
+          "profesores": [
+            "SOTO CASCANTE EMANUELLE"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "31020"
+            },
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "MA1103",
+      "nombre": "Cálculo y álgebra lineal",
+      "creditos": 4,
+      "requisitos": [
+        "MA1102"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "CHAVARRIA MOLINA JEFFRY"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "30920"
+            },
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "CHINCHILLA VALVERDE JORGE LUIS"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "30920"
+            },
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "CHINCHILLA VALVERDE JORGE LUIS"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "CHAVARRIA MOLINA JEFFRY"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            },
+            {
+              "inicio": "11300",
+              "fin": "11450"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "JIMENEZ ROMERO ALEJANDRA"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            },
+            {
+              "inicio": "11300",
+              "fin": "11450"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "FIGUEROA MATA GEOVANNI"
+          ],
+          "horario": [
+            {
+              "inicio": "31500",
+              "fin": "31650"
+            },
+            {
+              "inicio": "11500",
+              "fin": "11650"
+            }
+          ]
+        },
+        {
+          "grupo": 7,
+          "profesores": [
+            "BRENES GOMEZ RANDALL"
+          ],
+          "horario": [
+            {
+              "inicio": "31600",
+              "fin": "31750"
+            },
+            {
+              "inicio": "11600",
+              "fin": "11750"
+            }
+          ]
+        },
+        {
+          "grupo": 8,
+          "profesores": [
+            "GUTIERREZ MONTENEGRO MARCO VINICIO"
+          ],
+          "horario": [
+            {
+              "inicio": "31700",
+              "fin": "31850"
+            },
+            {
+              "inicio": "11700",
+              "fin": "11850"
+            }
+          ]
+        },
+        {
+          "grupo": 9,
+          "profesores": [
+            "ALPIZAR BRENES GEISEL"
+          ],
+          "horario": [
+            {
+              "inicio": "31800",
+              "fin": "31950"
+            },
+            {
+              "inicio": "11800",
+              "fin": "11950"
+            }
+          ]
+        },
+        {
+          "grupo": 10,
+          "profesores": [
+            "FIGUEROA MATA GEOVANNI"
+          ],
+          "horario": [
+            {
+              "inicio": "31800",
+              "fin": "31950"
+            },
+            {
+              "inicio": "11800",
+              "fin": "11950"
+            }
+          ]
+        },
+        {
+          "grupo": 11,
+          "profesores": [
+            "ACUÑA PRADO LUIS"
+          ],
+          "horario": [
+            {
+              "inicio": "20730",
+              "fin": "20920"
+            },
+            {
+              "inicio": "40730",
+              "fin": "40920"
+            }
+          ]
+        },
+        {
+          "grupo": 12,
+          "profesores": [
+            "GUTIERREZ MONTENEGRO MARCO VINICIO"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            },
+            {
+              "inicio": "40930",
+              "fin": "41120"
+            }
+          ]
+        },
+        {
+          "grupo": 13,
+          "profesores": [
+            "FIGUEROA MATA GEOVANNI"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21450"
+            },
+            {
+              "inicio": "41300",
+              "fin": "41450"
+            }
+          ]
+        },
+        {
+          "grupo": 14,
+          "profesores": [
+            "CALDERON SOLANO MANUEL"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21650"
+            },
+            {
+              "inicio": "41500",
+              "fin": "41650"
+            }
+          ]
+        },
+        {
+          "grupo": 15,
+          "profesores": [
+            "PARRA RODRIGUEZ EMMANUELLE"
+          ],
+          "horario": [
+            {
+              "inicio": "21600",
+              "fin": "21750"
+            },
+            {
+              "inicio": "41600",
+              "fin": "41750"
+            }
+          ]
+        },
+        {
+          "grupo": 16,
+          "profesores": [
+            "CALDERON SOLANO MANUEL"
+          ],
+          "horario": [
+            {
+              "inicio": "21700",
+              "fin": "21850"
+            },
+            {
+              "inicio": "41700",
+              "fin": "41850"
+            }
+          ]
+        },
+        {
+          "grupo": 17,
+          "profesores": [
+            "MORA PICADO LUIS FERNANDO"
+          ],
+          "horario": [
+            {
+              "inicio": "21800",
+              "fin": "21950"
+            },
+            {
+              "inicio": "41800",
+              "fin": "41950"
+            }
+          ]
+        },
+        {
+          "grupo": 18,
+          "profesores": [
+            "BRENES GOMEZ RANDALL"
+          ],
+          "horario": [
+            {
+              "inicio": "50730",
+              "fin": "51120"
+            }
+          ]
+        },
+        {
+          "grupo": 19,
+          "profesores": [
+            "JIMENEZ MADRIGAL JORGE"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "31120"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "FREER PANIAGUA DYLANA"
+          ],
+          "horario": [
+            {
+              "inicio": "31420",
+              "fin": "31605"
+            },
+            {
+              "inicio": "20755",
+              "fin": "20940"
+            }
+          ]
+        },
+        {
+          "grupo": 51,
+          "profesores": [
+            "NAVARRO AGUIRRE JESSICA"
+          ],
+          "horario": [
+            {
+              "inicio": "30945",
+              "fin": "31130"
+            },
+            {
+              "inicio": "10945",
+              "fin": "11130"
+            }
+          ]
+        },
+        {
+          "grupo": 52,
+          "profesores": [
+            "CARRERA RETANA LUIS ERNESTO"
+          ],
+          "horario": [
+            {
+              "inicio": "20945",
+              "fin": "21130"
+            },
+            {
+              "inicio": "40945",
+              "fin": "41130"
+            }
+          ]
+        },
+        {
+          "grupo": 40,
+          "profesores": [
+            "CALDERON SOLANO MANUEL"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            },
+            {
+              "inicio": "11300",
+              "fin": "11450"
+            }
+          ]
+        },
+        {
+          "grupo": 90,
+          "profesores": [
+            "OVIEDO UGALDE NORBERTO"
+          ],
+          "horario": [
+            {
+              "inicio": "31500",
+              "fin": "31650"
+            },
+            {
+              "inicio": "11500",
+              "fin": "11650"
+            }
+          ]
+        },
+        {
+          "grupo": 60,
+          "profesores": [
+            "LOPEZ MORA VERONICA"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            },
+            {
+              "inicio": "11300",
+              "fin": "11450"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "MA1403",
+      "nombre": "Matemática discreta",
+      "creditos": 4,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "SOLIS ARGUEDAS ADRIANA"
+          ],
+          "horario": [
+            {
+              "inicio": "20730",
+              "fin": "20920"
+            },
+            {
+              "inicio": "40730",
+              "fin": "40920"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "FALLAS MONGE JUAN JOSE"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            },
+            {
+              "inicio": "40930",
+              "fin": "41120"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "SOTO QUIROS JUAN PABLO"
+          ],
+          "horario": [
+            {
+              "inicio": "31800",
+              "fin": "31950"
+            },
+            {
+              "inicio": "11800",
+              "fin": "11950"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "RAMIREZ ARCE GREIVIN"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            },
+            {
+              "inicio": "11300",
+              "fin": "11450"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "FALLAS MONGE JUAN JOSE"
+          ],
+          "horario": [
+            {
+              "inicio": "31500",
+              "fin": "31650"
+            },
+            {
+              "inicio": "11500",
+              "fin": "11650"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "CHAVES SALAS LEONEL ROLANDO"
+          ],
+          "horario": [
+            {
+              "inicio": "20730",
+              "fin": "20920"
+            },
+            {
+              "inicio": "40730",
+              "fin": "40920"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "GONZALEZ VARGAS KARINA"
+          ],
+          "horario": [
+            {
+              "inicio": "31230",
+              "fin": "31415"
+            },
+            {
+              "inicio": "21230",
+              "fin": "21415"
+            }
+          ]
+        },
+        {
+          "grupo": 51,
+          "profesores": [
+            "SABORIO CORDERO NATALIA"
+          ],
+          "horario": [
+            {
+              "inicio": "20945",
+              "fin": "21130"
+            },
+            {
+              "inicio": "40945",
+              "fin": "41130"
+            }
+          ]
+        },
+        {
+          "grupo": 40,
+          "profesores": [
+            "SOLANO HERRERA BYRON ANDREY"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21650"
+            },
+            {
+              "inicio": "41500",
+              "fin": "41650"
+            }
+          ]
+        },
+        {
+          "grupo": 90,
+          "profesores": [
+            "RODRIGUEZ BUSTOS KENDALL"
+          ],
+          "horario": [
+            {
+              "inicio": "20900",
+              "fin": "21050"
+            },
+            {
+              "inicio": "40900",
+              "fin": "41050"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "MA2104",
+      "nombre": "Cálculo superior",
+      "creditos": 4,
+      "requisitos": [
+        "MA1103"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "MONGE FALLAS JORGE"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            },
+            {
+              "inicio": "40930",
+              "fin": "41120"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "BORBON ALPIZAR ALEXANDER"
+          ],
+          "horario": [
+            {
+              "inicio": "31800",
+              "fin": "31950"
+            },
+            {
+              "inicio": "11800",
+              "fin": "11950"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "VALVERDE SANCHEZ SAMUEL"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21650"
+            },
+            {
+              "inicio": "41500",
+              "fin": "41650"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "JIMENEZ ROMERO ALEJANDRA"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "OVIEDO UGALDE NORBERTO"
+          ],
+          "horario": [
+            {
+              "inicio": "21800",
+              "fin": "21950"
+            },
+            {
+              "inicio": "41800",
+              "fin": "41950"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "ESQUIVEL SAMUDIO JEISON"
+          ],
+          "horario": [
+            {
+              "inicio": "50730",
+              "fin": "51120"
+            }
+          ]
+        },
+        {
+          "grupo": 7,
+          "profesores": [
+            "CHACON VARGAS ERICK"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            },
+            {
+              "inicio": "11300",
+              "fin": "11450"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "CARRERA RETANA LUIS ERNESTO"
+          ],
+          "horario": [
+            {
+              "inicio": "30945",
+              "fin": "31130"
+            },
+            {
+              "inicio": "10945",
+              "fin": "11130"
+            }
+          ]
+        },
+        {
+          "grupo": 90,
+          "profesores": [
+            "GARCIA DELGADO PAULO"
+          ],
+          "horario": [
+            {
+              "inicio": "31600",
+              "fin": "31750"
+            },
+            {
+              "inicio": "11600",
+              "fin": "11750"
+            }
+          ]
+        },
+        {
+          "grupo": 60,
+          "profesores": [
+            "WYNTA BANTON RANDY YADIR"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "30920"
+            },
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "MA2105",
+      "nombre": "Ecuaciones diferenciales",
+      "creditos": 4,
+      "requisitos": [
+        "MA1103"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "ALPIZAR BRENES GEISEL"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "30920"
+            },
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "MARIN SANCHEZ MARIO"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21450"
+            },
+            {
+              "inicio": "41300",
+              "fin": "41450"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "BRENES GOMEZ RANDALL"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "MARIN SANCHEZ MARIO"
+          ],
+          "horario": [
+            {
+              "inicio": "21700",
+              "fin": "21850"
+            },
+            {
+              "inicio": "41700",
+              "fin": "41850"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "ACUÑA PRADO LUIS"
+          ],
+          "horario": [
+            {
+              "inicio": "50730",
+              "fin": "51120"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "OVIEDO UGALDE NORBERTO"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21650"
+            },
+            {
+              "inicio": "41500",
+              "fin": "41650"
+            }
+          ]
+        },
+        {
+          "grupo": 7,
+          "profesores": [
+            "RAMIREZ ARCE GREIVIN"
+          ],
+          "horario": [
+            {
+              "inicio": "31700",
+              "fin": "31850"
+            },
+            {
+              "inicio": "11700",
+              "fin": "11850"
+            }
+          ]
+        },
+        {
+          "grupo": 8,
+          "profesores": [
+            "MORA CASASOLA MARIA FERNANDA"
+          ],
+          "horario": [
+            {
+              "inicio": "31700",
+              "fin": "31850"
+            },
+            {
+              "inicio": "11700",
+              "fin": "11850"
+            }
+          ]
+        },
+        {
+          "grupo": 9,
+          "profesores": [
+            "MORA CASASOLA MARIA FERNANDA"
+          ],
+          "horario": [
+            {
+              "inicio": "50730",
+              "fin": "51120"
+            }
+          ]
+        },
+        {
+          "grupo": 10,
+          "profesores": [
+            "PRENDAS ROJAS JUAN PABLO"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            },
+            {
+              "inicio": "40930",
+              "fin": "41120"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "GUILLEN PEREZ CARLOS ENRIQUE"
+          ],
+          "horario": [
+            {
+              "inicio": "20945",
+              "fin": "21130"
+            },
+            {
+              "inicio": "40945",
+              "fin": "41130"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "PI2609",
+      "nombre": "Probabilidad y estadística",
+      "creditos": 2,
+      "requisitos": [
+        "MA2104"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "SOLANO LEANDRO PAULA"
+          ],
+          "horario": [
+            {
+              "inicio": "00730",
+              "fin": "01020"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "HASBUM FERNANDEZ IVANNIA"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21550"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "HASBUM FERNANDEZ IVANNIA"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31550"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "PI5516",
+      "nombre": "Ingeniería económica",
+      "creditos": 3,
+      "requisitos": [
+        "PI2609"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "CHACON ROJAS FERNANDO"
+          ],
+          "horario": [
+            {
+              "inicio": "11700",
+              "fin": "12050"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "FARAH GUZMAN BILJHANA SHAKIRA"
+          ],
+          "horario": [
+            {
+              "inicio": "41700",
+              "fin": "42050"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "MCLEAN VALERIO KATHLEEN"
+          ],
+          "horario": [
+            {
+              "inicio": "01610",
+              "fin": "01945"
+            }
+          ]
+        },
+        {
+          "grupo": 90,
+          "profesores": [
+            "HERNANDEZ RAMIREZ MANRIQUE"
+          ],
+          "horario": [
+            {
+              "inicio": "20700",
+              "fin": "21050"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "QU1102",
+      "nombre": "Laboratorio de química básica I",
+      "creditos": 1,
+      "requisitos": [],
+      "correquisitos": [
+        "QU1106"
+      ],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "SALAS JIMENEZ JUAN CARLOS"
+          ],
+          "horario": [
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "CALLEJA AMADOR CARLOS ENRIQUE"
+          ],
+          "horario": [
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "CALLEJA AMADOR CARLOS ENRIQUE"
+          ],
+          "horario": [
+            {
+              "inicio": "11300",
+              "fin": "11450"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "MATA MATA ALEJANDRA"
+          ],
+          "horario": [
+            {
+              "inicio": "11500",
+              "fin": "11650"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "MORA MOLINA JESUS"
+          ],
+          "horario": [
+            {
+              "inicio": "20730",
+              "fin": "20920"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "MORA MOLINA JESUS"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            }
+          ]
+        },
+        {
+          "grupo": 7,
+          "profesores": [
+            "MORA MOLINA JESUS"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21450"
+            }
+          ]
+        },
+        {
+          "grupo": 8,
+          "profesores": [
+            "HERNANDEZ ALPIZAR LAURA"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21650"
+            }
+          ]
+        },
+        {
+          "grupo": 9,
+          "profesores": [
+            "QUIROS BUSTOS NOEMI"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "30920"
+            }
+          ]
+        },
+        {
+          "grupo": 10,
+          "profesores": [
+            "QUIROS BUSTOS NOEMI"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            }
+          ]
+        },
+        {
+          "grupo": 11,
+          "profesores": [
+            "CALLEJA AMADOR CARLOS ENRIQUE"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            }
+          ]
+        },
+        {
+          "grupo": 13,
+          "profesores": [
+            "SOTO CORDOBA SILVIA"
+          ],
+          "horario": [
+            {
+              "inicio": "40730",
+              "fin": "40920"
+            }
+          ]
+        },
+        {
+          "grupo": 15,
+          "profesores": [
+            "LEDEZMA ESPINOZA AURA"
+          ],
+          "horario": [
+            {
+              "inicio": "41300",
+              "fin": "41450"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "VILLALOBOS MURILLO JOHANA"
+          ],
+          "horario": [
+            {
+              "inicio": "21610",
+              "fin": "21755"
+            }
+          ]
+        },
+        {
+          "grupo": 51,
+          "profesores": [
+            "FERNANDEZ RODRIGUEZ MARCELA"
+          ],
+          "horario": [
+            {
+              "inicio": "10945",
+              "fin": "11130"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "QU1106",
+      "nombre": "Química básica I",
+      "creditos": 3,
+      "requisitos": [],
+      "correquisitos": [
+        "QU1102"
+      ],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "PORRAS ACOSTA MARIA"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "30920"
+            },
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "CALLEJA AMADOR CARLOS ENRIQUE"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "30920"
+            },
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "PORRAS ACOSTA MARIA"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            },
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "SOTO CORDOBA SILVIA"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            },
+            {
+              "inicio": "11300",
+              "fin": "11450"
+            }
+          ]
+        },
+        {
+          "grupo": 7,
+          "profesores": [
+            "QUIROS BUSTOS NOEMI"
+          ],
+          "horario": [
+            {
+              "inicio": "31500",
+              "fin": "31650"
+            },
+            {
+              "inicio": "11500",
+              "fin": "11650"
+            }
+          ]
+        },
+        {
+          "grupo": 9,
+          "profesores": [
+            "PORRAS ACOSTA MARIA"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            },
+            {
+              "inicio": "40930",
+              "fin": "41120"
+            }
+          ]
+        },
+        {
+          "grupo": 11,
+          "profesores": [
+            "VILLALTA ROMERO FABIAN"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21450"
+            },
+            {
+              "inicio": "41300",
+              "fin": "41450"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "ARIAS ALPIZAR KEVIN RICARDO"
+          ],
+          "horario": [
+            {
+              "inicio": "31610",
+              "fin": "31755"
+            },
+            {
+              "inicio": "11610",
+              "fin": "11755"
+            }
+          ]
+        },
+        {
+          "grupo": 51,
+          "profesores": [
+            "ARIAS ALPIZAR KEVIN RICARDO"
+          ],
+          "horario": [
+            {
+              "inicio": "31230",
+              "fin": "31415"
+            },
+            {
+              "inicio": "11230",
+              "fin": "11415"
+            }
+          ]
+        },
+        {
+          "grupo": 60,
+          "profesores": [
+            "OSORNO FALLAS DAVID"
+          ],
+          "horario": [
+            {
+              "inicio": "11700",
+              "fin": "12050"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1101",
+      "nombre": "Artes dramáticas",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "DE SIMONE CASTELLON ALEXANDRA"
+          ],
+          "horario": [
+            {
+              "inicio": "00930",
+              "fin": "01120"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "GOMEZ JIMENEZ ANDREA"
+          ],
+          "horario": [
+            {
+              "inicio": "11700",
+              "fin": "11850"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "HERRERA CORDERO SERGIO"
+          ],
+          "horario": [
+            {
+              "inicio": "21420",
+              "fin": "21605"
+            }
+          ]
+        },
+        {
+          "grupo": 40,
+          "profesores": [
+            "DE SIMONE CASTELLON ALEXANDRA"
+          ],
+          "horario": [
+            {
+              "inicio": "41730",
+              "fin": "41910"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1102",
+      "nombre": "Acción social",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "VALERIN ROJAS SOFIA"
+          ],
+          "horario": [
+            {
+              "inicio": "00730",
+              "fin": "00920"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "BARRANTES ALVARADO IVAN"
+          ],
+          "horario": [
+            {
+              "inicio": "01800",
+              "fin": "01950"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "VALERIN ROJAS SOFIA"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "BARRANTES ALVARADO IVAN"
+          ],
+          "horario": [
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 40,
+          "profesores": [
+            "HERNANDEZ RAMIREZ MARIELA"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1103",
+      "nombre": "Danza",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "QUESADA VILLALOBOS JORGE"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "LEANDRO CHACON MARIA FRANCELA"
+          ],
+          "horario": [
+            {
+              "inicio": "01610",
+              "fin": "01755"
+            }
+          ]
+        },
+        {
+          "grupo": 40,
+          "profesores": [
+            "VALVERDE JARA ANA"
+          ],
+          "horario": [
+            {
+              "inicio": "11730",
+              "fin": "11910"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1104",
+      "nombre": "Artes visuales",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "DIAZ BRENES NELSON"
+          ],
+          "horario": [
+            {
+              "inicio": "01700",
+              "fin": "01850"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "DIAZ BRENES NELSON"
+          ],
+          "horario": [
+            {
+              "inicio": "11700",
+              "fin": "11850"
+            }
+          ]
+        },
+        {
+          "grupo": 20,
+          "profesores": [
+            "SERRANO SOLANO ALEX"
+          ],
+          "horario": [
+            {
+              "inicio": "21000",
+              "fin": "21150"
+            }
+          ]
+        },
+        {
+          "grupo": 21,
+          "profesores": [
+            "SERRANO SOLANO ALEX"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21650"
+            }
+          ]
+        },
+        {
+          "grupo": 62,
+          "profesores": [
+            "SERRANO SOLANO ALEX"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1105",
+      "nombre": "Artes musicales",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "CASTILLO ULATE ELENA"
+          ],
+          "horario": [
+            {
+              "inicio": "00730",
+              "fin": "00920"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "MONGE PEREZ LUIS DIEGO"
+          ],
+          "horario": [
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "MEZA SOLANO VINICIO"
+          ],
+          "horario": [
+            {
+              "inicio": "11700",
+              "fin": "11850"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "MEZA SOLANO VINICIO"
+          ],
+          "horario": [
+            {
+              "inicio": "31500",
+              "fin": "31650"
+            }
+          ]
+        },
+        {
+          "grupo": 7,
+          "profesores": [
+            "MONGE PEREZ LUIS DIEGO"
+          ],
+          "horario": [
+            {
+              "inicio": "31800",
+              "fin": "31950"
+            }
+          ]
+        },
+        {
+          "grupo": 8,
+          "profesores": [
+            "CASTILLO ULATE ELENA"
+          ],
+          "horario": [
+            {
+              "inicio": "41300",
+              "fin": "41450"
+            }
+          ]
+        },
+        {
+          "grupo": 40,
+          "profesores": [
+            "MEZA SOLANO VINICIO"
+          ],
+          "horario": [
+            {
+              "inicio": "31730",
+              "fin": "31910"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1106",
+      "nombre": "Apreciación literaria",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "RAMOS VARGAS ARNOLDO"
+          ],
+          "horario": [
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        },
+        {
+          "grupo": 40,
+          "profesores": [
+            "RAMOS VARGAS ARNOLDO"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1107",
+      "nombre": "Apreciación de cine",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "COTO GUZMAN ALICIA"
+          ],
+          "horario": [
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "DIAZ BRENES NELSON"
+          ],
+          "horario": [
+            {
+              "inicio": "41300",
+              "fin": "41450"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "HERRERA CORDERO SERGIO"
+          ],
+          "horario": [
+            {
+              "inicio": "30945",
+              "fin": "31130"
+            }
+          ]
+        },
+        {
+          "grupo": 40,
+          "profesores": [
+            "RAMOS VARGAS ARNOLDO"
+          ],
+          "horario": [
+            {
+              "inicio": "11500",
+              "fin": "11650"
+            }
+          ]
+        },
+        {
+          "grupo": 60,
+          "profesores": [
+            "SERRANO SOLANO ALEX"
+          ],
+          "horario": [
+            {
+              "inicio": "41300",
+              "fin": "41450"
+            }
+          ]
+        },
+        {
+          "grupo": 61,
+          "profesores": [
+            "SERRANO SOLANO ALEX"
+          ],
+          "horario": [
+            {
+              "inicio": "41500",
+              "fin": "41650"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1109",
+      "nombre": "Dinámica de la cultura",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "SANCHO MARTINEZ LAURA KARINA"
+          ],
+          "horario": [
+            {
+              "inicio": "00730",
+              "fin": "00920"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "SANCHO MARTINEZ LAURA KARINA"
+          ],
+          "horario": [
+            {
+              "inicio": "20730",
+              "fin": "20920"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1111",
+      "nombre": "Expresión corporal",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 50,
+          "profesores": [
+            "LEANDRO CHACON MARIA FRANCELA"
+          ],
+          "horario": [
+            {
+              "inicio": "21610",
+              "fin": "21755"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1201",
+      "nombre": "Atletismo",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "LORIA SOLANO JOHNNY"
+          ],
+          "horario": [
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "LORIA SOLANO JOHNNY"
+          ],
+          "horario": [
+            {
+              "inicio": "20730",
+              "fin": "20920"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "LARIOS CRUZ BORIS ALLAN"
+          ],
+          "horario": [
+            {
+              "inicio": "20945",
+              "fin": "21130"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1204",
+      "nombre": "Natación",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "LOAIZA SOTO BIERY"
+          ],
+          "horario": [
+            {
+              "inicio": "00730",
+              "fin": "00920"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "LOAIZA SOTO BIERY"
+          ],
+          "horario": [
+            {
+              "inicio": "00930",
+              "fin": "01120"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "BOGANTES GARCIA FERNANDO"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "SANCHEZ PEREZ LISBETH"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21450"
+            }
+          ]
+        },
+        {
+          "grupo": 7,
+          "profesores": [
+            "SANCHEZ PEREZ LISBETH"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21650"
+            }
+          ]
+        },
+        {
+          "grupo": 8,
+          "profesores": [
+            "SANCHEZ PEREZ LISBETH"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            }
+          ]
+        },
+        {
+          "grupo": 9,
+          "profesores": [
+            "MENDEZ SOLANO MIGUEL"
+          ],
+          "horario": [
+            {
+              "inicio": "31700",
+              "fin": "31850"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "LARIOS CRUZ BORIS ALLAN"
+          ],
+          "horario": [
+            {
+              "inicio": "10700",
+              "fin": "10845"
+            }
+          ]
+        },
+        {
+          "grupo": 51,
+          "profesores": [
+            "RODRIGUEZ MORERA MARCIA"
+          ],
+          "horario": [
+            {
+              "inicio": "30700",
+              "fin": "30845"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1205",
+      "nombre": "Juegos y deportes en conjunto",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "QUIROS VALVERDE RODRIGO"
+          ],
+          "horario": [
+            {
+              "inicio": "00930",
+              "fin": "01120"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "LOAIZA SOTO BIERY"
+          ],
+          "horario": [
+            {
+              "inicio": "10730",
+              "fin": "10920"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "CABRERA ARAYA GUSTAVO ALCIDES"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "QUIROS VALVERDE RODRIGO"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "30920"
+            }
+          ]
+        },
+        {
+          "grupo": 7,
+          "profesores": [
+            "VEGA AGUERO JORGE"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "SANCHEZ SOTO CARLOS ALBERTO"
+          ],
+          "horario": [
+            {
+              "inicio": "20700",
+              "fin": "20845"
+            }
+          ]
+        },
+        {
+          "grupo": 40,
+          "profesores": [
+            "VIQUEZ ZELEDON JESSENIA"
+          ],
+          "horario": [
+            {
+              "inicio": "30930",
+              "fin": "31120"
+            }
+          ]
+        },
+        {
+          "grupo": 20,
+          "profesores": [
+            "JIMENEZ JIMENEZ DANIEL"
+          ],
+          "horario": [
+            {
+              "inicio": "20900",
+              "fin": "21050"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1206",
+      "nombre": "Acondicionamiento físico",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "LORIA SOLANO JOHNNY"
+          ],
+          "horario": [
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "ORTEGA ARTAVIA JHONNY"
+          ],
+          "horario": [
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "VEGA AGUERO JORGE"
+          ],
+          "horario": [
+            {
+              "inicio": "00730",
+              "fin": "00920"
+            }
+          ]
+        },
+        {
+          "grupo": 6,
+          "profesores": [
+            "TRAVIESO RODRIGUEZ ALBERTO"
+          ],
+          "horario": [
+            {
+              "inicio": "41300",
+              "fin": "41450"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "RODRIGUEZ MORERA MARCIA"
+          ],
+          "horario": [
+            {
+              "inicio": "21230",
+              "fin": "21415"
+            }
+          ]
+        },
+        {
+          "grupo": 40,
+          "profesores": [
+            "VIQUEZ ZELEDON JESSENIA"
+          ],
+          "horario": [
+            {
+              "inicio": "21500",
+              "fin": "21650"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1209",
+      "nombre": "Béisbol-softbol",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "MENDEZ SOLANO MIGUEL"
+          ],
+          "horario": [
+            {
+              "inicio": "00730",
+              "fin": "00920"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "VEGA AGUERO JORGE"
+          ],
+          "horario": [
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1218",
+      "nombre": "Ajedrez",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "CORDERO MAROTO NELSON"
+          ],
+          "horario": [
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 40,
+          "profesores": [
+            "CORDERO MAROTO NELSON"
+          ],
+          "horario": [
+            {
+              "inicio": "21730",
+              "fin": "21910"
+            }
+          ]
+        },
+        {
+          "grupo": 41,
+          "profesores": [
+            "CORDERO MAROTO NELSON"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31450"
+            }
+          ]
+        },
+        {
+          "grupo": 42,
+          "profesores": [
+            "CORDERO MAROTO NELSON"
+          ],
+          "horario": [
+            {
+              "inicio": "11300",
+              "fin": "11450"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1219",
+      "nombre": "Baloncesto recreativo",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "CABRERA ARAYA GUSTAVO ALCIDES"
+          ],
+          "horario": [
+            {
+              "inicio": "00730",
+              "fin": "00920"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "MARIN VARGAS FABIAN"
+          ],
+          "horario": [
+            {
+              "inicio": "11500",
+              "fin": "11650"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1220",
+      "nombre": "Baloncesto",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 50,
+          "profesores": [
+            "SANCHEZ SOTO CARLOS ALBERTO"
+          ],
+          "horario": [
+            {
+              "inicio": "11230",
+              "fin": "11415"
+            }
+          ]
+        },
+        {
+          "grupo": 60,
+          "profesores": [
+            "TRAVIESO RODRIGUEZ ALBERTO"
+          ],
+          "horario": [
+            {
+              "inicio": "31500",
+              "fin": "31650"
+            }
+          ]
+        },
+        {
+          "grupo": 61,
+          "profesores": [
+            "TRAVIESO RODRIGUEZ ALBERTO"
+          ],
+          "horario": [
+            {
+              "inicio": "31700",
+              "fin": "31850"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1221",
+      "nombre": "Futbol I",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "JIMENEZ JIMENEZ DANIEL"
+          ],
+          "horario": [
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "LARIOS CRUZ BORIS ALLAN"
+          ],
+          "horario": [
+            {
+              "inicio": "21610",
+              "fin": "21755"
+            }
+          ]
+        },
+        {
+          "grupo": 20,
+          "profesores": [
+            "JIMENEZ JIMENEZ DANIEL"
+          ],
+          "horario": [
+            {
+              "inicio": "40900",
+              "fin": "41050"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1222",
+      "nombre": "Futbol sala",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "ORTEGA ARTAVIA JHONNY"
+          ],
+          "horario": [
+            {
+              "inicio": "20930",
+              "fin": "21120"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "ORTEGA ARTAVIA JHONNY"
+          ],
+          "horario": [
+            {
+              "inicio": "40930",
+              "fin": "41120"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "SANCHEZ SOTO CARLOS ALBERTO"
+          ],
+          "horario": [
+            {
+              "inicio": "00945",
+              "fin": "01130"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE1223",
+      "nombre": "Voleibol",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 50,
+          "profesores": [
+            "RODRIGUEZ MORERA MARCIA"
+          ],
+          "horario": [
+            {
+              "inicio": "31230",
+              "fin": "31415"
+            }
+          ]
+        },
+        {
+          "grupo": 40,
+          "profesores": [
+            "VIQUEZ ZELEDON JESSENIA"
+          ],
+          "horario": [
+            {
+              "inicio": "10930",
+              "fin": "11120"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE2110",
+      "nombre": "Apreciación musical",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 50,
+          "profesores": [
+            "QUIROS SALAZAR MARIA LORNA"
+          ],
+          "horario": [
+            {
+              "inicio": "20945",
+              "fin": "21130"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SE2111",
+      "nombre": "Técnica del canto",
+      "creditos": 0,
+      "requisitos": [],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 50,
+          "profesores": [
+            "QUIROS SALAZAR MARIA LORNA"
+          ],
+          "horario": [
+            {
+              "inicio": "11230",
+              "fin": "11415"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "codigo": "SO4604",
+      "nombre": "Seguridad y salud ocupacional",
+      "creditos": 3,
+      "requisitos": [
+        "FI1102"
+      ],
+      "correquisitos": [],
+      "grupos": [
+        {
+          "grupo": 1,
+          "profesores": [
+            "MORALES MARTINEZ GABRIELA"
+          ],
+          "horario": [
+            {
+              "inicio": "00730",
+              "fin": "01020"
+            }
+          ]
+        },
+        {
+          "grupo": 2,
+          "profesores": [
+            "CARPIO CHAVES MONICA"
+          ],
+          "horario": [
+            {
+              "inicio": "31300",
+              "fin": "31550"
+            }
+          ]
+        },
+        {
+          "grupo": 3,
+          "profesores": [
+            "MORALES MARTINEZ GABRIELA"
+          ],
+          "horario": [
+            {
+              "inicio": "31700",
+              "fin": "31950"
+            }
+          ]
+        },
+        {
+          "grupo": 4,
+          "profesores": [
+            "MORALES MARTINEZ GABRIELA"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21550"
+            }
+          ]
+        },
+        {
+          "grupo": 5,
+          "profesores": [
+            "MORALES MARTINEZ GABRIELA"
+          ],
+          "horario": [
+            {
+              "inicio": "40730",
+              "fin": "41020"
+            }
+          ]
+        },
+        {
+          "grupo": 50,
+          "profesores": [
+            "AGUERO HERNANDEZ ANA LAURA"
+          ],
+          "horario": [
+            {
+              "inicio": "10755",
+              "fin": "11035"
+            }
+          ]
+        },
+        {
+          "grupo": 20,
+          "profesores": [
+            "MEDINA ESCOBAR MARIA LOURDES"
+          ],
+          "horario": [
+            {
+              "inicio": "21300",
+              "fin": "21550"
+            }
+          ]
+        },
+        {
+          "grupo": 60,
+          "profesores": [
+            "FERNANDEZ RIVAS LUIS ANTONIO"
+          ],
+          "horario": [
+            {
+              "inicio": "30730",
+              "fin": "31020"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

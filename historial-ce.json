@@ -1,257 +1,258 @@
 {
+  "tipo": "historial",
   "carrera": "ingenieria-computadores",
   "Bloque 0": [
     {
       "codigo": "CI0205",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "MA0101",
-      "aprobado": 1
+      "aprobado": true
     }
   ],
   "Bloque 1": [
     {
       "codigo": "CE1101",
-      "aprobado": 1
+      "aprobado": true
     },
     {
       "codigo": "CE1104",
-      "aprobado": 1
+      "aprobado": true
     },
     {
       "codigo": "MA1102",
-      "aprobado": 1
+      "aprobado": true
     },
     {
       "codigo": "MA1403",
-      "aprobado": 1
+      "aprobado": true
     },
     {
       "codigo": "QU1102",
-      "aprobado": 1
+      "aprobado": true
     },
     {
       "codigo": "QU1106",
-      "aprobado": 1
+      "aprobado": true
     },
     {
       "codigo": "SE1100",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "SE1200",
-      "aprobado": 0
+      "aprobado": false
     }
   ],
   "Bloque 2": [
     {
       "codigo": "CE1103",
-      "aprobado": 1
+      "aprobado": true
     },
     {
       "codigo": "CE1105",
-      "aprobado": 1
+      "aprobado": true
     },
     {
       "codigo": "CI1407",
-      "aprobado": 1
+      "aprobado": true
     },
     {
       "codigo": "CS1502",
-      "aprobado": 1
+      "aprobado": true
     },
     {
       "codigo": "FI1101",
-      "aprobado": 1
+      "aprobado": true
     },
     {
       "codigo": "FI1201",
-      "aprobado": 1
+      "aprobado": true
     },
     {
       "codigo": "MA1103",
-      "aprobado": 1
+      "aprobado": true
     },
     {
       "codigo": "SE1400",
-      "aprobado": 0
+      "aprobado": false
     }
   ],
   "Bloque 3": [
     {
       "codigo": "CE2103",
-      "aprobado": 1
+      "aprobado": true
     },
     {
       "codigo": "CS2101",
-      "aprobado": 1
+      "aprobado": true
     },
     {
       "codigo": "EL2113",
-      "aprobado": 1
+      "aprobado": true
     },
     {
       "codigo": "FH1000",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "FI1102",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "FI1202",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "MA2104",
-      "aprobado": 1
+      "aprobado": true
     }
   ],
   "Bloque 4": [
     {
       "codigo": "CE1106",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CE2201",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "EL2114",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "EL2207",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "PI2609",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "SO4604",
-      "aprobado": 0
+      "aprobado": false
     }
   ],
   "Bloque 5": [
     {
       "codigo": "CE1107",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CE3101",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CD3201",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "MA2105",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "PI5516",
-      "aprobado": 0
+      "aprobado": false
     }
   ],
   "Bloque 6": [
     {
       "codigo": "CE1108",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CE1109",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CE1110",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CE4301",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CI3203",
-      "aprobado": 0
+      "aprobado": false
     }
   ],
   "Bloque 7": [
     {
       "codigo": "CE1111",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CE1112",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CE1116",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CE4302",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CE4303",
-      "aprobado": 0
+      "aprobado": false
     }
   ],
   "Bloque 8": [
     {
       "codigo": "AE4208",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CE1113",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CE5301",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CE5701",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CS3404",
-      "aprobado": 0
+      "aprobado": false
     }
   ],
   "Bloque 9": [
     {
       "codigo": "CE1114",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CE1115",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CE1117",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CE5801",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CE5901",
-      "aprobado": 0
+      "aprobado": false
     },
     {
       "codigo": "CS4402",
-      "aprobado": 0
+      "aprobado": false
     }
   ],
-  "Bloque 10": [
+  "Bloque true0": [
     {
       "codigo": "CE5601",
-      "aprobado": 0
+      "aprobado": false
     }
   ]
 }
