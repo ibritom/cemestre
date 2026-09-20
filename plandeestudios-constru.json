@@ -3382,7 +3382,7 @@
       "nombre": "Laboratorio física general II",
       "creditos": 1,
       "requisitos": [ "FI1201" ],
-      "correquisitos": [ "FI1202" ],
+      "correquisitos": [ "FI1102" ],
       "grupos": [
         {
           "grupo": 1,
