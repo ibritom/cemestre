@@ -1,0 +1,306 @@
+{
+  "tipo": "historial",
+  "carrera": "ingenieria-construccion",
+  "Bloque 0": [
+    {
+      "codigo": "CI0200",
+      "aprobado": false
+    },
+    {
+      "codigo": "CI0202",
+      "aprobado": true
+    }
+  ],
+  "Bloque 1": [
+    {
+      "codigo": "CI1106",
+      "aprobado": true
+    },
+    {
+      "codigo": "CI1230",
+      "aprobado": true
+    },
+    {
+      "codigo": "CS1502",
+      "aprobado": true
+    },
+    {
+      "codigo": "MA0101",
+      "aprobado": true
+    },
+    {
+      "codigo": "QU1102",
+      "aprobado": true
+    },
+    {
+      "codigo": "QU1106",
+      "aprobado": true
+    },
+    {
+      "codigo": "SE1100",
+      "aprobado": false
+    },
+    {
+      "codigo": "SE1200",
+      "aprobado": false
+    }
+  ],
+  "Bloque 2": [
+    {
+      "codigo": "CI1107",
+      "aprobado": true
+    },
+    {
+      "codigo": "CI1231",
+      "aprobado": true
+    },
+    {
+      "codigo": "FH1000",
+      "aprobado": false
+    },
+    {
+      "codigo": "QU1104",
+      "aprobado": true
+    },
+    {
+      "codigo": "QU1107",
+      "aprobado": true
+    },
+    {
+      "codigo": "FI1101",
+      "aprobado": true
+    },
+    {
+      "codigo": "FI1201",
+      "aprobado": true
+    },
+    {
+      "codigo": "MA1102",
+      "aprobado": true
+    },
+    {
+      "codigo": "SE1400",
+      "aprobado": false
+    }
+  ],
+  "Bloque 3": [
+    {
+      "codigo": "CO2201",
+      "aprobado": true
+    },
+    {
+      "codigo": "CS2101",
+      "aprobado": true
+    },
+    {
+      "codigo": "CO2205",
+      "aprobado": true
+    },
+    {
+      "codigo": "CO4108",
+      "aprobado": true
+    },
+    {
+      "codigo": "FI1102",
+      "aprobado": false
+    },
+    {
+      "codigo": "FI1202",
+      "aprobado": false
+    },
+    {
+      "codigo": "MA1103",
+      "aprobado": true
+    }
+  ],
+  "Bloque 4": [
+    {
+      "codigo": "CO2202",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO2203",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO3401",
+      "aprobado": false
+    },
+    {
+      "codigo": "FI2103",
+      "aprobado": false
+    },
+    {
+      "codigo": "PI2609",
+      "aprobado": false
+    },
+    {
+      "codigo": "MA2104",
+      "aprobado": true
+    }
+  ],
+  "Bloque 5": [
+    {
+      "codigo": "CO3301",
+      "aprobado": false
+    },
+    {
+      "codigo": "C03305",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO3403",
+      "aprobado": false
+    },
+    {
+      "codigo": "MA2105",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO3404",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO3405",
+      "aprobado": false
+    },
+    {
+      "codigo": "ME2208",
+      "aprobado": false
+    }
+  ],
+  "Bloque 6": [
+    {
+      "codigo": "AE5111",
+      "aprobado": false
+    },
+    {
+      "codigo": "CM3207",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO3304",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO3501",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO4308",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO5013",
+      "aprobado": false
+    },
+    {
+      "codigo": "CS2303",
+      "aprobado": false 
+    }
+  ],
+  "Bloque 7": [
+    {
+      "codigo": "CO3103",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO3302",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO3407",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO3503",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO4307",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO4409",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO4505",
+      "aprobado": false
+    }
+  ],
+  "Bloque 8": [
+    {
+      "codigo": "CO4106",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO4107",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO4309",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO4405",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO4406",
+      "aprobado": false
+    },
+    {
+      "codigo": "CS3404",
+      "aprobado": false
+    }
+  ],
+  "Bloque 9": [
+    {
+      "codigo": "AE5121",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO5012",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO5023",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO5032",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO5051",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO5056",
+      "aprobado": false
+    },
+    {
+      "codigo": "CS4402",
+      "aprobado": false
+    }
+  ],
+  "Bloque 10": [
+    {
+      "codigo": "CO5022",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO5024",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO5031",
+      "aprobado": false
+    },
+    {
+      "codigo": "CO5057",
+      "aprobado": false
+    }
+  ]
+}
