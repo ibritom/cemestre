@@ -9,7 +9,7 @@ static int codigo_en_primeros_cuatro_bloques(json_t *historial_root,
                                                const char *codigo) {
     char nombre_bloque[BLOQUE_NOMBRE_LEN];
 
-    for (int semestre = 1; semestre <= NUM_SEMESTRES; semestre++) {
+    for (int semestre = 0; semestre <= NUM_SEMESTRES; semestre++) {
         snprintf(nombre_bloque, sizeof(nombre_bloque), "Bloque %d", semestre);
         json_t *bloque = json_object_get(historial_root, nombre_bloque);
 
@@ -187,3 +187,4 @@ void liberar_plan(GrupoCurso *plan, size_t count) {
 
     free(plan);
 }
+

@@ -137,7 +137,7 @@
       "codigo": "CE1101",
       "nombre": "Introducción a la programación",
       "creditos": 3,
-      "requisitos": [],
+      "requisitos": [ "MA0101" ],
       "correquisitos": [],
       "grupos": [
         {
@@ -3229,7 +3229,7 @@
       "codigo": "MA0101",
       "nombre": "Matemática general",
       "creditos": 2,
-      "requisitos": [],
+      "requisitos": [ "CE1101" ],
       "correquisitos": [],
       "grupos": [
         {
