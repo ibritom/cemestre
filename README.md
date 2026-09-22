@@ -19,7 +19,8 @@ El grupo 4 de EL2113, que los miercoles tiene clases de 7:30AM a las 9:20AM, su 
 
 En el archivo del plan de estudios, se decidió solo usar el código del curso, y poner si está aprobado como un booleano, esto para hacer el archivo más sencillo de modificar manualmente.
 
-Llenar la parte 2.2.2
+# Caso límite real
+En el plan de estudios de ingeniería en computadores existe el caso de MA1102 siendo requisito de MA1103, FI1101 y EL2113, un caso diamante en que hay requisitos compartidos. Un DFS mal implementado puede ver este caso y confundirlo con un ciclo, debido a que no podría distinguir si ya visitó ese camino, o si ya lo visitó en general. Debido a como está implementado este DFS, cuando se llama MA1102 una segunda vez desde un camino distinto, no lo vuelve a explorar.
 
 # Estructuras de datos
 El plan de estudios esta estructurado de tal manera de que tenga el nombre de la carrera y que tipo de archivo es el el tope de la jerarquía, y que los cursos estén el la sección cursos. Cada uno de los cursos contiene su nombre, código, cantidad de créditos, y sus requisitos y correquisitos como un arreglo. Dentro de cada uno de los cursos, hay una categoría que contiene los grupos, con el número del grupo, el nombre del profesor que lo está llevando, y una última sección dentro de cada uno de los grupos que contiene los horarios, guardados con el entero mencionado previamente.
