@@ -26,3 +26,9 @@ En el plan de estudios de ingeniería en computadores existe el caso de MA1102 s
 El plan de estudios esta estructurado de tal manera de que tenga el nombre de la carrera y que tipo de archivo es el el tope de la jerarquía, y que los cursos estén el la sección cursos. Cada uno de los cursos contiene su nombre, código, cantidad de créditos, y sus requisitos y correquisitos como un arreglo. Dentro de cada uno de los cursos, hay una categoría que contiene los grupos, con el número del grupo, el nombre del profesor que lo está llevando, y una última sección dentro de cada uno de los grupos que contiene los horarios, guardados con el entero mencionado previamente.
 El historial del estudiante tiene el nombre de la carrera y que tipo de archivo es al inicio del archivo. Luego, tiene todos los cursos con solo su código, y un booleano que indica si está aprobado o no.
 El archivo de salida tiene que tipo de archivo es, el nombre de la carrera, los semestres considerados, y los ciclos encontrados en el tope de la jerarquía. Para los cursos individuales, tiene lo mismo que el plan de estudios, solo que con la adición de si está aprobado, si tiene los requisitos completos, los correquisitos pendientes, si es matriculable, y si presenta un choque con otro grupo, y muestra todos los grupos de un curso con los que tiene choque de horario, junto con su número de grupo y código de curso.
+
+# Nombre de los estudiantes
+Iván Ignacio Brito Medina
+Henry Perez Sequeira
+Daniel Jose Espinoza Vega
+Raymond Janfreed Araya Elizondo
