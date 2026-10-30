@@ -1,0 +1,9 @@
+{
+  "cursos": [
+    { "codigo": "EL2207", "grupos": [2] },
+    { "codigo": "MA2105", "grupos": [1] },
+    { "codigo": "CE1106", "grupos": [1, 2] }
+  ],
+  "min_creditos": 5,
+  "max_creditos": 10
+}

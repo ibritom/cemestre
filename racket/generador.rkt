@@ -47,6 +47,58 @@
   (ormap (lambda ([e : Par]) (and (member e (Candidato-choques c)) #t))
          elegidos))
 
+;; Comprueba si dos candidatos tienen un choque
+(: candidatos-chocan? (-> Candidato Candidato Boolean))
+
+(define (candidatos-chocan? a b)
+  (or
+   (and (member (Candidato-par b)
+                (Candidato-choques a))
+        #t)
+
+   (and (member (Candidato-par a)
+                (Candidato-choques b))
+        #t)))
+
+
+;; Comprueba si un candidato choca con algún grupo
+;; seleccionado de otro curso
+(: tiene-choque-externo?
+   (-> Candidato (Listof CursoCandidatos) Boolean))
+
+(define (tiene-choque-externo? candidato cursos)
+  (ormap
+   (lambda ([curso : CursoCandidatos])
+     (ormap
+      (lambda ([otro : Candidato])
+        (and
+         (not
+          (string=?
+           (car (Candidato-par candidato))
+           (car (Candidato-par otro))))
+         (candidatos-chocan? candidato otro)))
+      curso))
+   cursos))
+
+;; Elimina los candidatos que tienen choques
+;; y los cursos que se quedan sin grupos
+(: filtrar-cursos
+   (-> (Listof CursoCandidatos)
+       (Listof CursoCandidatos)))
+
+(define (filtrar-cursos cursos)
+  (filter
+   (lambda ([curso : CursoCandidatos])
+     (not (null? curso)))
+
+   (map
+    (lambda ([curso : CursoCandidatos])
+      (filter
+       (lambda ([c : Candidato])
+         (not (tiene-choque-externo? c cursos)))
+       curso))
+    cursos)))
+
 ;; ---------------------------------------------------------------------------
 ;; Generación con poda
 ;; ---------------------------------------------------------------------------
@@ -75,10 +127,33 @@
       (lambda () (probar-grupos (cdr candidatos) restantes elegidos)))]))
 
 ;; Punto de entrada.
-(: generar-combinaciones (-> (Listof CursoCandidatos) (Flujo (Listof Par))))
-(define (generar-combinaciones cursos)
-  (extender cursos '()))
+;(: generar-combinaciones
+;   (-> (Listof CursoCandidatos)
+;       (Flujo (Listof Par))))
+;(define (generar-combinaciones cursos)
+;  (let ([cursos-validos (filtrar-cursos cursos)])
+;    (displayln "\n=== CURSOS ORIGINALES ===")
+;    (for ([curso (in-list cursos)])
+;      (displayln (map Candidato-par curso)))
+;
+;    (displayln "\n=== CURSOS DESPUES DEL FILTRADO ===")
+;    (for ([curso (in-list cursos-validos)])
+;      (displayln (map Candidato-par curso)))
+;
+;    (if (null? cursos-validos)
+;        '()
+;        (extender cursos-validos '()))))
+(: generar-combinaciones
+   (-> (Listof CursoCandidatos)
+       (Flujo (Listof Par))))
 
+(define (generar-combinaciones cursos)
+  (define cursos-validos
+    (filtrar-cursos cursos))
+
+  (if (null? cursos-validos)
+      '()
+      (extender cursos-validos '())))
 ;; ---------------------------------------------------------------------------
 ;; Versión SIN poda (solo para pruebas y para comparar en el README):
 ;; genera el producto cartesiano completo y filtra al final.
