@@ -8,47 +8,48 @@
 
 (provide main)
 
-;; Busca un curso por su código.
+;; Busca un curso por su codigo
 (: buscar-curso
    (-> String (Listof CursoInfo) (Option CursoInfo)))
 (define (buscar-curso codigo cursos)
   (findf
    (lambda ([curso : CursoInfo])
-     (string=? (CursoInfo-codigo curso) codigo))
+     (string=? codigo (CursoInfo-codigo curso)))
    cursos))
 
-;; Comprueba que el curso exista y pueda matricularse.
-(: validar-curso-seleccionado
+;; Valida que el curso exista y se pueda matricular
+(: validar-curso
    (-> String (Listof CursoInfo) CursoInfo))
-(define (validar-curso-seleccionado codigo cursos)
+(define (validar-curso codigo cursos)
   (define encontrado
     (buscar-curso codigo cursos))
 
   (unless encontrado
     (error 'main
-           "Curso inexistente en el catálogo: ~a"
+           "No existe el curso ~a en el catalogo"
            codigo))
 
   (unless (CursoInfo-puede-matricular encontrado)
     (error 'main
-           "El catálogo indica que no puede matricularse el curso: ~a"
+           "El curso ~a no se puede matricular"
            codigo))
 
   encontrado)
 
+;; Programa principal
 (: main (-> Void))
 (define (main)
   (define argumentos
     (current-command-line-arguments))
 
-  (unless (= (vector-length argumentos) 3)
-    (error 'main
-           (string-append
-            "Uso: racket main.rkt catalogo_validado.json "
-            "preferencias.json resultado.json")))
-
+  ;; Rutas de entrada y salida
   (define ruta-catalogo
-    (vector-ref argumentos 0))
+    (if (= (vector-length argumentos) 3)
+        (vector-ref argumentos 0)
+        (error 'main
+               (string-append
+                "Uso: racket main.rkt "
+                "catalogo.json preferencias.json resultado.json"))))
 
   (define ruta-preferencias
     (vector-ref argumentos 1))
@@ -56,71 +57,88 @@
   (define ruta-salida
     (vector-ref argumentos 2))
 
-  ;; Lectura de los datos.
-  (define-values (cursos candidatos detalles-grupos)
+  ;; Leer archivos
+  (define-values (cursos candidatos detalles)
     (leer-catalogo ruta-catalogo))
 
   (define preferencias
     (leer-preferencias ruta-preferencias))
 
-  ;; Tabla de créditos indexada por código de curso.
-  (: creditos (HashTable String Integer))
+  ;; Crear tabla inmutable con creditos por curso
+  (: creditos (Immutable-HashTable String Integer))
   (define creditos
-    (make-hash
+    (make-immutable-hash
      (for/list : (Listof (Pairof String Integer))
        ([curso (in-list cursos)])
-       (cons (CursoInfo-codigo curso)
-             (CursoInfo-creditos curso)))))
-  (: cursos-por-codigo (HashTable String CursoInfo))
-  (define cursos-por-codigo (make-hash))
+       (cons
+        (CursoInfo-codigo curso)
+        (CursoInfo-creditos curso)))))
 
-  (for ([curso (in-list cursos)])
-    (hash-set!
-     cursos-por-codigo
-     (CursoInfo-codigo curso)
-     curso))
+  ;; Crear tabla inmutable con informacion de cursos
+  (: cursos-por-codigo
+     (Immutable-HashTable String CursoInfo))
+  (define cursos-por-codigo
+    (make-immutable-hash
+     (for/list : (Listof (Pairof String CursoInfo))
+       ([curso (in-list cursos)])
+       (cons (CursoInfo-codigo curso) curso))))
 
-  ;; Obtiene los grupos correspondientes a cada curso seleccionado.
+  ;; Obtener los grupos escogidos en las preferencias
+  (: cursos-seleccionados (Listof CursoCandidatos))
   (define cursos-seleccionados
     (for/list : (Listof CursoCandidatos)
-      ([codigo
-        (in-list (Preferencias-cursos preferencias))])
+      ([preferido (in-list (Preferencias-cursos preferencias))])
 
-      (validar-curso-seleccionado codigo cursos)
+      (define codigo
+        (CursoPreferido-codigo preferido))
 
-      (hash-ref
-       candidatos
-       codigo
-       (lambda ()
-         (error 'main
-                "No hay grupos para el curso: ~a"
-                codigo)))))
+      ;; Validar el curso
+      (define curso
+        (validar-curso codigo cursos))
 
-  ;; Genera las combinaciones sin choques de horario.
+      ;; Obtener los grupos que vienen del catalogo
+      (define disponibles
+        (hash-ref
+         candidatos
+         codigo
+         (lambda ()
+           (error 'main
+                  "No se encontraron grupos para ~a"
+                  codigo))))
+
+      ;; Conservar solo los grupos seleccionados
+      (define seleccionados
+        (filtrar-grupos
+         (CursoPreferido-grupos preferido)
+         disponibles))
+
+      (when (null? seleccionados)
+        (error 'main
+               "No hay grupos validos para el curso ~a"
+               codigo))
+
+      seleccionados))
+
+  ;; Generar combinaciones sin choques
   (define combinaciones
     (generar-combinaciones cursos-seleccionados))
 
-  ;; Filtra por el rango de créditos.
-  (define por-creditos
+  ;; Filtrar combinaciones segun los creditos
+  (define resultado
     (filtrar-creditos
      (Preferencias-min-creditos preferencias)
      (Preferencias-max-creditos preferencias)
      creditos
      combinaciones))
 
-  ;; Aplica el filtro opcional de exclusión de un curso.
-  (define codigo-excluido
-    (Preferencias-codigo-excluido preferencias))
+  ;; Exportar las combinaciones sin crear una lista completa
+  (exportar-combinaciones
+   ruta-salida
+   resultado
+   cursos-por-codigo
+   detalles)
 
-  (define resultado
-    (if codigo-excluido
-        (filtrar-codigo codigo-excluido por-creditos)
-        por-creditos))
-
-  ;; Exporta el resultado.
-  (exportar-combinaciones ruta-salida resultado cursos-por-codigo detalles-grupos)
-
-  (displayln "Exportación completada.")
+  (displayln "Exportacion completada.")
   (void))
 
 (module+ main

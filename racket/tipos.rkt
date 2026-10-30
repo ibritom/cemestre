@@ -1,11 +1,13 @@
+
 #lang typed/racket
 
 (provide (struct-out CursoInfo)
+         (struct-out CursoPreferido)
          (struct-out Preferencias)
-	 (struct-out HorarioInfo)
-	 (struct-out GrupoInfo))
+         (struct-out HorarioInfo)
+         (struct-out GrupoInfo))
 
-; Struct para la ver si un curso es matriculable, y guardar su cantidad de creditos
+;; Informacion de cada curso
 (struct CursoInfo
   ([codigo : String]
    [nombre : String]
@@ -14,20 +16,26 @@
    [carrera : String])
   #:transparent)
 
-; Struct para guardar las preferencias del estudiante
-(struct Preferencias
-  ([cursos : (Listof String)]
-   [min-creditos : Integer]
-   [max-creditos : Integer]
-   [codigo-excluido : (Option String)])
+;; Cursos y grupos seleccionados por el estudiante
+(struct CursoPreferido
+  ([codigo : String]
+   [grupos : (Listof Integer)])
   #:transparent)
 
-; Structs para guardar datos específicos de cada grupo
+;; Preferencias del estudiante
+(struct Preferencias
+  ([cursos : (Listof CursoPreferido)]
+   [min-creditos : Integer]
+   [max-creditos : Integer])
+  #:transparent)
+
+;; Informacion de los horarios
 (struct HorarioInfo
   ([inicio : String]
    [fin : String])
   #:transparent)
 
+;; Informacion de los grupos
 (struct GrupoInfo
   ([codigo : String]
    [numero : Integer]

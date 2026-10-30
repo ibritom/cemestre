@@ -1,8 +1,8 @@
+
 #lang typed/racket
 
 (require/typed json
   [write-json (-> Any Output-Port Void)])
-(require racket/system)
 
 (require "flujos.rkt"
          "generador.rkt"
@@ -10,7 +10,7 @@
 
 (provide exportar-combinaciones)
 
-;; Convierte una combinación a JSON con todos sus datos.
+;; Convierte una combinacion a un objeto JSON
 (: combinacion->json
    (-> (Listof Par)
        (HashTable String CursoInfo)
@@ -18,7 +18,7 @@
        Any))
 (define (combinacion->json combinacion cursos grupos)
 
-  ;; Calcula los créditos totales.
+  ;; Calcula los creditos totales
   (define total
     (for/sum : Integer ([par (in-list combinacion)])
       (define curso
@@ -26,12 +26,13 @@
          cursos
          (car par)
          (lambda ()
-           (error 'exportar-combinaciones
+           (error 'exportar
                   "Curso desconocido: ~a"
                   (car par)))))
+
       (CursoInfo-creditos curso)))
 
-  ;; Agrega la información de cada curso y grupo.
+  ;; Prepara los datos de cada curso seleccionado
   (define cursos-json
     (for/list : (Listof Any)
       ([par (in-list combinacion)])
@@ -41,19 +42,18 @@
          cursos
          (car par)
          (lambda ()
-           (error 'exportar-combinaciones
+           (error 'exportar
                   "Curso desconocido: ~a"
                   (car par)))))
 
-      (define detalle
+      (define grupo
         (hash-ref
          grupos
          par
          (lambda ()
-           (error 'exportar-combinaciones
-                  "No se encontró el grupo ~a del curso ~a"
-                  (cdr par)
-                  (car par)))))
+           (error 'exportar
+                  "Grupo desconocido: ~a"
+                  par))))
 
       (hasheq
        'codigo (CursoInfo-codigo curso)
@@ -61,10 +61,10 @@
        'nombre (CursoInfo-nombre curso)
        'carrera (CursoInfo-carrera curso)
        'creditos (CursoInfo-creditos curso)
-       'profesores (GrupoInfo-profesores detalle)
+       'profesores (GrupoInfo-profesores grupo)
        'horario
        (for/list : (Listof Any)
-         ([bloque (in-list (GrupoInfo-horario detalle))])
+         ([bloque (in-list (GrupoInfo-horario grupo))])
          (hasheq
           'inicio (HorarioInfo-inicio bloque)
           'fin (HorarioInfo-fin bloque))))))
@@ -73,7 +73,44 @@
    'creditos_totales total
    'cursos cursos-json))
 
-; Escribe todas las combinaciones en un único objeto JSON.
+
+;; Escribe las combinaciones una por una
+(: escribir-combinaciones
+   (-> (Flujo (Listof Par))
+       Boolean
+       Output-Port
+       (HashTable String CursoInfo)
+       (HashTable Par GrupoInfo)
+       Void))
+
+(define (escribir-combinaciones combinaciones primera?
+                               salida cursos grupos)
+  (if (null? combinaciones)
+      (void)
+
+      (begin
+        ;; Agregar una coma entre combinaciones
+        (unless primera?
+          (display "," salida))
+
+        ;; Escribir la combinacion actual
+        (write-json
+         (combinacion->json
+          (flujo-primero combinaciones)
+          cursos
+          grupos)
+         salida)
+
+        ;; Continuar con la siguiente combinacion
+        (escribir-combinaciones
+         (flujo-resto combinaciones)
+         #f
+         salida
+         cursos
+         grupos))))
+
+
+;; Exporta las combinaciones a un archivo JSON
 (: exportar-combinaciones
    (-> String
        (Flujo (Listof Par))
@@ -82,37 +119,20 @@
        Void))
 
 (define (exportar-combinaciones ruta combinaciones cursos grupos)
-  (define lista-combinaciones
-    (flujo->lista combinaciones))
-
-  (define documento
-    (hasheq
-     'combinaciones
-     (map
-      (lambda ([combinacion : (Listof Par)])
-        (combinacion->json combinacion cursos grupos))
-      lista-combinaciones)))
-
-  ; Genera primero el JSON.
   (call-with-output-file ruta
     (lambda ([salida : Output-Port])
-      (write-json documento salida)
-      (newline salida))
-    #:exists 'replace)
 
-  ; Aplica indentación al mismo archivo.
-  (unless
-      (system
-       (string-append
-        "jq '.' "
-        (format "~s" ruta)
-        " > "
-        (format "~s" (string-append ruta ".tmp"))
-        " && mv "
-        (format "~s" (string-append ruta ".tmp"))
-        " "
-        (format "~s" ruta)))
-    (error 'exportar-combinaciones
-           "No se pudo formatear el JSON con jq."))
+      ;; Inicio del archivo JSON
+      (display "{\"combinaciones\":[" salida)
 
-  (void))
+      ;; Escribir las combinaciones
+      (escribir-combinaciones
+       combinaciones
+       #t
+       salida
+       cursos
+       grupos)
+
+      ;; Cerrar el archivo JSON
+      (display "]}\n" salida))
+    #:exists 'replace))

@@ -8,33 +8,35 @@
 
 (provide leer-catalogo leer-preferencias)
 
-; Lee un archivo JSON.
+;; Lee un archivo JSON
 (: leer-json (-> String Any))
 (define (leer-json ruta)
   (call-with-input-file ruta read-json))
 
-; Obtiene un campo obligatorio de un objeto JSON.
+;; Busca un campo obligatorio
 (: campo-obligatorio (-> Any Symbol Any))
 (define (campo-obligatorio objeto clave)
   (unless (hash? objeto)
-    (error 'lectura
-           "Se esperaba un objeto JSON al buscar el campo ~a"
-           clave))
-  (hash-ref (assert objeto hash?)
-            clave
-            (lambda ()
-              (error 'lectura "Falta el campo obligatorio ~a" clave))))
+    (error 'lectura "Se esperaba un objeto JSON"))
 
-; Obtiene un campo opcional de un objeto JSON.
+  (hash-ref
+   (assert objeto hash?)
+   clave
+   (lambda ()
+     (error 'lectura "Falta el campo ~a" clave))))
+
+;; Busca un campo opcional
 (: campo-opcional (-> Any Symbol Any Any))
 (define (campo-opcional objeto clave defecto)
   (unless (hash? objeto)
-    (error 'lectura
-           "Se esperaba un objeto JSON al buscar el campo ~a"
-           clave))
-  (hash-ref (assert objeto hash?) clave (lambda () defecto)))
+    (error 'lectura "Se esperaba un objeto JSON"))
 
-; Valida y convierte valores JSON a los tipos esperados.
+  (hash-ref
+   (assert objeto hash?)
+   clave
+   (lambda () defecto)))
+
+;; Conversion de datos JSON
 (: como-lista (-> Any (Listof Any)))
 (define (como-lista valor)
   (unless (list? valor)
@@ -44,7 +46,7 @@
 (: como-string (-> Any String))
 (define (como-string valor)
   (unless (string? valor)
-    (error 'lectura "Se esperaba una cadena JSON"))
+    (error 'lectura "Se esperaba un texto JSON"))
   (assert valor string?))
 
 (: como-entero (-> Any Integer))
@@ -59,174 +61,210 @@
     (error 'lectura "Se esperaba un booleano JSON"))
   (assert valor boolean?))
 
-; Convierte un choque en un par (código . grupo).
+;; Lee un par curso-grupo de los choques
 (: leer-par (-> Any Par))
-(define (leer-par choque)
-  (cons (como-string (campo-obligatorio choque 'codigo))
-        (como-entero (campo-obligatorio choque 'grupo))))
+(define (leer-par dato)
+  (cons
+   (como-string (campo-obligatorio dato 'codigo))
+   (como-entero (campo-obligatorio dato 'grupo))))
 
-; Convierte un grupo en un candidato.
+;; Convierte un grupo en candidato para el generador
 (: leer-grupo (-> String Any Candidato))
 (define (leer-grupo codigo grupo)
   (define numero
     (como-entero (campo-obligatorio grupo 'grupo)))
+
   (define choques
     (map leer-par
          (como-lista
           (campo-opcional grupo 'choques '()))))
+
   (candidato codigo numero choques))
 
-; Convierte un curso del catálogo en CursoInfo.
-(: leer-curso (-> String Any CursoInfo))
-(define (leer-curso carrera curso)
+;; Lee la informacion de un curso
+(: leer-curso (-> (Option String) Any CursoInfo))
+(define (leer-curso carrera-raiz curso)
+  (define codigo
+    (como-string (campo-obligatorio curso 'codigo)))
+
+  (define carrera-valor
+    (campo-opcional curso 'carrera #f))
+
+  (define carrera
+    (if (eq? carrera-valor #f)
+        (if carrera-raiz
+            carrera-raiz
+            (error 'lectura
+                   "Falta carrera para el curso ~a"
+                   codigo))
+        (como-string carrera-valor)))
+
   (CursoInfo
-   (como-string
-    (campo-obligatorio curso 'codigo))
-   (como-string
-    (campo-obligatorio curso 'nombre))
-   (como-entero
-    (campo-obligatorio curso 'creditos))
+   codigo
+   (como-string (campo-obligatorio curso 'nombre))
+   (como-entero (campo-obligatorio curso 'creditos))
    (como-booleano
     (campo-opcional curso 'puede_matricular #f))
    carrera))
 
-; Lee el catálogo validado.
-(: leer-catalogo
-   (-> String
-       (Values
-        (Listof CursoInfo)
-        (Immutable-HashTable String CursoCandidatos)
-        (HashTable Par GrupoInfo))))
-(define (leer-catalogo ruta)
-  (define documento (leer-json ruta))
-
-  (unless (hash? documento)
-    (error 'leer-catalogo
-           "La raíz del JSON debe ser un objeto"))
-
-  (define carrera
-    (como-string
-     (campo-obligatorio documento 'carrera)))
-
-  (unless
-      (equal? (campo-obligatorio documento 'tipo)
-              "catalogo-validado")
-    (error 'leer-catalogo
-           "El archivo no es un catálogo validado"))
-
-  (define cursos-json
-    (como-lista (campo-obligatorio documento 'cursos)))
-
-  (define cursos
-  (map
-   (lambda ([curso-json : Any])
-     (leer-curso carrera curso-json))
-   cursos-json))
-
-  (: candidatos
-     (Immutable-HashTable String CursoCandidatos))
-  (define candidatos
-    (make-immutable-hash
-     (for/list : (Listof (Pairof String CursoCandidatos))
-       ([curso-json (in-list cursos-json)])
-
-       (define codigo
-         (como-string
-          (campo-obligatorio curso-json 'codigo)))
-
-       (: grupos CursoCandidatos)
-       (define grupos
-         (map
-          (lambda ([grupo : Any])
-            (leer-grupo codigo grupo))
-          (como-lista
-           (campo-opcional curso-json 'grupos '()))))
-
-       (ann
-        (cons codigo grupos)
-        (Pairof String CursoCandidatos)))))
-  (: detalles-grupos (HashTable Par GrupoInfo))
-  (define detalles-grupos (make-hash))
-
-  (for ([curso-json (in-list cursos-json)])
-    (define codigo
-      (como-string
-       (campo-obligatorio curso-json 'codigo)))
-
-    (for ([grupo-json
-           (in-list
-            (como-lista
-             (campo-opcional curso-json 'grupos '())))])
-
-      (define detalle
-        (leer-grupo-info codigo grupo-json))
-
-      (hash-set!
-       detalles-grupos
-       (cons codigo (GrupoInfo-numero detalle))
-       detalle)))
-
-(values cursos candidatos detalles-grupos))
-
-; Lee y valida las preferencias del usuario.
-(: leer-preferencias (-> String Preferencias))
-(define (leer-preferencias ruta)
-  (define documento (leer-json ruta))
-
-  (unless (hash? documento)
-    (error 'leer-preferencias
-           "La raíz de preferencias debe ser un objeto"))
-
-  (define cursos
-    (map como-string
-         (como-lista
-          (campo-obligatorio documento 'cursos))))
-
-  (define minimo
-    (como-entero
-     (campo-opcional documento 'min_creditos 0)))
-
-  (define maximo
-    (como-entero
-     (campo-opcional documento 'max_creditos 100)))
-
-  (define excluido-valor
-    (campo-opcional documento 'codigo_excluido #f))
-
-  (define excluido
-    (if (eq? excluido-valor #f)
-        #f
-        (como-string excluido-valor)))
-
-  (when (< minimo 0)
-    (error 'leer-preferencias
-           "min_creditos no puede ser negativo"))
-
-  (when (< maximo minimo)
-    (error 'leer-preferencias
-           "max_creditos debe ser mayor o igual que min_creditos"))
-
-  (Preferencias cursos minimo maximo excluido))
-
-; Lee un bloque horario.
+;; Lee un bloque horario
 (: leer-horario (-> Any HorarioInfo))
 (define (leer-horario horario)
   (HorarioInfo
-   (como-string
-    (campo-obligatorio horario 'inicio))
-   (como-string
-    (campo-obligatorio horario 'fin))))
+   (como-string (campo-obligatorio horario 'inicio))
+   (como-string (campo-obligatorio horario 'fin))))
 
-; Lee los datos descriptivos de un grupo.
+;; Lee los datos de un grupo
 (: leer-grupo-info (-> String Any GrupoInfo))
 (define (leer-grupo-info codigo grupo)
   (GrupoInfo
    codigo
-   (como-entero
-    (campo-obligatorio grupo 'grupo))
+   (como-entero (campo-obligatorio grupo 'grupo))
    (map como-string
         (como-lista
          (campo-opcional grupo 'profesores '())))
    (map leer-horario
         (como-lista
          (campo-opcional grupo 'horario '())))))
+
+;; Lee el catalogo validado de C
+(: leer-catalogo
+   (-> String
+       (Values
+        (Listof CursoInfo)
+        (Immutable-HashTable String CursoCandidatos)
+        (Immutable-HashTable Par GrupoInfo))))
+(define (leer-catalogo ruta)
+  (define documento (leer-json ruta))
+
+  (unless (equal? (campo-obligatorio documento 'tipo)
+                  "catalogo-validado")
+    (error 'leer-catalogo
+           "El archivo no es un catalogo validado"))
+
+  (define carrera-valor
+    (campo-opcional documento 'carrera #f))
+
+  (: carrera-raiz (Option String))
+  (define carrera-raiz
+    (if (eq? carrera-valor #f)
+        #f
+        (como-string carrera-valor)))
+
+  (define cursos-json
+    (como-lista (campo-obligatorio documento 'cursos)))
+
+  ;; Informacion de los cursos
+  (define cursos
+    (map
+     (lambda ([curso : Any])
+       (leer-curso carrera-raiz curso))
+     cursos-json))
+
+  
+;; Grupos disponibles de cada curso
+(: candidatos
+   (Immutable-HashTable String CursoCandidatos))
+
+(define candidatos
+  (make-immutable-hash
+   (for/list : (Listof (Pairof String CursoCandidatos))
+     ([curso (in-list cursos-json)])
+
+     (define codigo
+       (como-string
+        (campo-obligatorio curso 'codigo)))
+
+     (: grupos CursoCandidatos)
+     (define grupos
+       (map
+        (lambda ([grupo : Any])
+          (leer-grupo codigo grupo))
+        (como-lista
+         (campo-opcional curso 'grupos '()))))
+
+     (ann (cons codigo grupos)
+          (Pairof String CursoCandidatos)))))
+
+
+  ;; Detalles de todos los grupos
+  (: detalles
+     (Immutable-HashTable Par GrupoInfo))
+  (define detalles
+    (make-immutable-hash
+     (for*/list : (Listof (Pairof Par GrupoInfo))
+       ([curso (in-list cursos-json)]
+        [grupo (in-list
+                (como-lista
+                 (campo-opcional curso 'grupos '())))])
+
+       (define codigo
+         (como-string (campo-obligatorio curso 'codigo)))
+
+       (define info
+         (leer-grupo-info codigo grupo))
+
+       (cons
+        (cons codigo (GrupoInfo-numero info))
+        info))))
+
+  (values cursos candidatos detalles))
+
+;; Lee un curso incluido en las preferencias
+(: leer-curso-preferido (-> Any CursoPreferido))
+(define (leer-curso-preferido dato)
+  (define codigo
+    (como-string (campo-obligatorio dato 'codigo)))
+
+  (define grupos
+    (map como-entero
+         (como-lista
+          (campo-obligatorio dato 'grupos))))
+
+  (when (null? grupos)
+    (error 'leer-preferencias
+           "El curso ~a no tiene grupos seleccionados"
+           codigo))
+
+  (CursoPreferido codigo grupos))
+
+;; Lee las preferencias del estudiante
+(: leer-preferencias (-> String Preferencias))
+(define (leer-preferencias ruta)
+  (define documento (leer-json ruta))
+
+  (define cursos
+    (map leer-curso-preferido
+         (como-lista
+          (campo-obligatorio documento 'cursos))))
+
+  (define minimo
+    (como-entero
+     (campo-obligatorio documento 'min_creditos)))
+
+  (define maximo
+    (como-entero
+     (campo-obligatorio documento 'max_creditos)))
+
+  (when (null? cursos)
+    (error 'leer-preferencias
+           "Debe seleccionar al menos un curso"))
+
+  (when (< minimo 0)
+    (error 'leer-preferencias
+           "Los creditos minimos no pueden ser negativos"))
+
+  (when (< maximo minimo)
+    (error 'leer-preferencias
+           "El maximo no puede ser menor que el minimo"))
+
+  ;; Evita que un mismo curso se seleccione dos veces
+  (define codigos
+    (map CursoPreferido-codigo cursos))
+
+  (unless (= (length codigos)
+             (length (remove-duplicates codigos)))
+    (error 'leer-preferencias
+           "Hay cursos repetidos en las preferencias"))
+
+  (Preferencias cursos minimo maximo))
