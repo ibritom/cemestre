@@ -4,7 +4,7 @@
 #define COD_LEN 7
 #define NOMBRE_LEN 128
 
-#define NUM_SEMESTRES 4
+#define NUM_SEMESTRES 6
 
 #define BLOQUE_NOMBRE_LEN 32
 
@@ -18,3 +18,4 @@
 #define SALIDA_DEFAULT "catalogo_validado.json"
 
 #endif
+

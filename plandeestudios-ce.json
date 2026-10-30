@@ -1175,7 +1175,7 @@
       "codigo": "CS2101",
       "nombre": "Ambiente humano",
       "creditos": 2,
-      "requisitos": [],
+      "requisitos": [ "CI1407" ],
       "correquisitos": [],
       "grupos": [
         {

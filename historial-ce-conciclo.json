@@ -1,0 +1,258 @@
+{
+  "tipo": "historial",
+  "carrera": "ingenieria-computadores",
+  "Bloque 0": [
+    {
+      "codigo": "CI0205",
+      "aprobado": false
+    },
+    {
+      "codigo": "MA0101",
+      "aprobado": false
+    }
+  ],
+  "Bloque 1": [
+    {
+      "codigo": "CE1101",
+      "aprobado": false
+    },
+    {
+      "codigo": "CE1104",
+      "aprobado": false
+    },
+    {
+      "codigo": "MA1102",
+      "aprobado": false
+    },
+    {
+      "codigo": "MA1403",
+      "aprobado": false
+    },
+    {
+      "codigo": "QU1102",
+      "aprobado": false
+    },
+    {
+      "codigo": "QU1106",
+      "aprobado": false
+    },
+    {
+      "codigo": "SE1100",
+      "aprobado": false
+    },
+    {
+      "codigo": "SE1200",
+      "aprobado": false
+    }
+  ],
+  "Bloque 2": [
+    {
+      "codigo": "CE1103",
+      "aprobado": false
+    },
+    {
+      "codigo": "CE1105",
+      "aprobado": false
+    },
+    {
+      "codigo": "CI1407",
+      "aprobado": false
+    },
+    {
+      "codigo": "CS1502",
+      "aprobado": false
+    },
+    {
+      "codigo": "FI1101",
+      "aprobado": false
+    },
+    {
+      "codigo": "FI1201",
+      "aprobado": false
+    },
+    {
+      "codigo": "MA1103",
+      "aprobado": false
+    },
+    {
+      "codigo": "SE1400",
+      "aprobado": false
+    }
+  ],
+  "Bloque 3": [
+    {
+      "codigo": "CE2103",
+      "aprobado": false
+    },
+    {
+      "codigo": "CS2101",
+      "aprobado": false
+    },
+    {
+      "codigo": "EL2113",
+      "aprobado": false
+    },
+    {
+      "codigo": "FH1000",
+      "aprobado": false
+    },
+    {
+      "codigo": "FI1102",
+      "aprobado": false
+    },
+    {
+      "codigo": "FI1202",
+      "aprobado": false
+    },
+    {
+      "codigo": "MA2104",
+      "aprobado": false
+    }
+  ],
+  "Bloque 4": [
+    {
+      "codigo": "CE1106",
+      "aprobado": false
+    },
+    {
+      "codigo": "CE2201",
+      "aprobado": false
+    },
+    {
+      "codigo": "EL2114",
+      "aprobado": false
+    },
+    {
+      "codigo": "EL2207",
+      "aprobado": false
+    },
+    {
+      "codigo": "PI2609",
+      "aprobado": false
+    },
+    {
+      "codigo": "SO4604",
+      "aprobado": false
+    }
+  ],
+  "Bloque 5": [
+    {
+      "codigo": "CE1107",
+      "aprobado": false
+    },
+    {
+      "codigo": "CE3101",
+      "aprobado": false
+    },
+    {
+      "codigo": "CD3201",
+      "aprobado": false
+    },
+    {
+      "codigo": "MA2105",
+      "aprobado": false
+    },
+    {
+      "codigo": "PI5516",
+      "aprobado": false
+    }
+  ],
+  "Bloque 6": [
+    {
+      "codigo": "CE1108",
+      "aprobado": false
+    },
+    {
+      "codigo": "CE1109",
+      "aprobado": false
+    },
+    {
+      "codigo": "CE1110",
+      "aprobado": false
+    },
+    {
+      "codigo": "CE4301",
+      "aprobado": false
+    },
+    {
+      "codigo": "CI3203",
+      "aprobado": false
+    }
+  ],
+  "Bloque 7": [
+    {
+      "codigo": "CE1111",
+      "aprobado": false
+    },
+    {
+      "codigo": "CE1112",
+      "aprobado": false
+    },
+    {
+      "codigo": "CE1116",
+      "aprobado": false
+    },
+    {
+      "codigo": "CE4302",
+      "aprobado": false
+    },
+    {
+      "codigo": "CE4303",
+      "aprobado": false
+    }
+  ],
+  "Bloque 8": [
+    {
+      "codigo": "AE4208",
+      "aprobado": false
+    },
+    {
+      "codigo": "CE1113",
+      "aprobado": false
+    },
+    {
+      "codigo": "CE5301",
+      "aprobado": false
+    },
+    {
+      "codigo": "CE5701",
+      "aprobado": false
+    },
+    {
+      "codigo": "CS3404",
+      "aprobado": false
+    }
+  ],
+  "Bloque 9": [
+    {
+      "codigo": "CE1114",
+      "aprobado": false
+    },
+    {
+      "codigo": "CE1115",
+      "aprobado": false
+    },
+    {
+      "codigo": "CE1117",
+      "aprobado": false
+    },
+    {
+      "codigo": "CE5801",
+      "aprobado": false
+    },
+    {
+      "codigo": "CE5901",
+      "aprobado": false
+    },
+    {
+      "codigo": "CS4402",
+      "aprobado": false
+    }
+  ],
+  "Bloque 10": [
+    {
+      "codigo": "CE5601",
+      "aprobado": false
+    }
+  ]
+}
