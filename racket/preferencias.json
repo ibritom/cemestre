@@ -1,6 +1,8 @@
 {
-  "cursos": [],
+  "cursos": [
+    { "codigo": "EL2207", "grupos": [2, 3] },
+    { "codigo": "FI1102", "grupos": [2, 3, 5, 99] }
+  ],
   "min_creditos": 5,
-  "max_creditos": 10,
-  "codigo_excluido": ""
+  "max_creditos": 10
 }

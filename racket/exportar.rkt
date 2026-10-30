@@ -1,4 +1,3 @@
-
 #lang typed/racket
 
 (require/typed json
@@ -73,7 +72,6 @@
    'creditos_totales total
    'cursos cursos-json))
 
-
 ;; Escribe las combinaciones una por una
 (: escribir-combinaciones
    (-> (Flujo (Listof Par))
@@ -82,23 +80,31 @@
        (HashTable String CursoInfo)
        (HashTable Par GrupoInfo)
        Void))
-
 (define (escribir-combinaciones combinaciones primera?
                                salida cursos grupos)
   (if (null? combinaciones)
       (void)
 
-      (begin
+      (let ([buffer (open-output-string)])
+
         ;; Agregar una coma entre combinaciones
         (unless primera?
-          (display "," salida))
+          (display ",\n" salida))
 
-        ;; Escribir la combinacion actual
+        ;; Escribir la combinacion en el buffer
         (write-json
          (combinacion->json
           (flujo-primero combinaciones)
           cursos
           grupos)
+         buffer)
+
+        ;; Formatear y escribir el JSON
+        (display "  " salida)
+        (display
+         (formatear-json
+          (get-output-string buffer)
+          1)
          salida)
 
         ;; Continuar con la siguiente combinacion
@@ -108,7 +114,6 @@
          salida
          cursos
          grupos))))
-
 
 ;; Exporta las combinaciones a un archivo JSON
 (: exportar-combinaciones
@@ -123,7 +128,10 @@
     (lambda ([salida : Output-Port])
 
       ;; Inicio del archivo JSON
-      (display "{\"combinaciones\":[" salida)
+      (display "{\n \"combinaciones\":[" salida)
+
+      (unless (null? combinaciones)
+	(newline salida))
 
       ;; Escribir las combinaciones
       (escribir-combinaciones
@@ -134,5 +142,94 @@
        grupos)
 
       ;; Cerrar el archivo JSON
-      (display "]}\n" salida))
+      (display "\n ]\n}\n" salida))
     #:exists 'replace))
+
+;; Formatea un JSON agregando sangria y saltos de linea
+(: formatear-json (-> String Integer String))
+
+(define (formatear-json json nivel-inicial)
+  (define entrada (string-length json))
+  (define salida (open-output-string))
+
+  (let loop ([i : Integer 0]
+             [nivel : Integer nivel-inicial]
+             [en-cadena? : Boolean #f]
+             [escape? : Boolean #f])
+
+    (unless (>= i entrada)
+      (define c (string-ref json i))
+
+      (cond
+        ;; Dentro de una cadena de texto
+        [en-cadena?
+         (write-char c salida)
+
+         (cond
+           [escape?
+            (loop (+ i 1) nivel #t #f)]
+
+           [(char=? c #\\)
+            (loop (+ i 1) nivel #t #t)]
+
+           [(char=? c #\")
+            (loop (+ i 1) nivel #f #f)]
+
+           [else
+            (loop (+ i 1) nivel #t #f)])]
+
+        ;; Inicio de una cadena
+        [(char=? c #\")
+         (write-char c salida)
+         (loop (+ i 1) nivel #t #f)]
+
+        ;; Objetos vacios
+        [(and (char=? c #\{)
+              (< (+ i 1) entrada)
+              (char=? (string-ref json (+ i 1)) #\}))
+         (display "{}" salida)
+         (loop (+ i 2) nivel #f #f)]
+
+        ;; Listas vacias
+        [(and (char=? c #\[)
+              (< (+ i 1) entrada)
+              (char=? (string-ref json (+ i 1)) #\]))
+         (display "[]" salida)
+         (loop (+ i 2) nivel #f #f)]
+
+        ;; Apertura de objeto o lista
+        [(or (char=? c #\{) (char=? c #\[))
+         (write-char c salida)
+         (newline salida)
+         (display (make-string (* 2 (+ nivel 1)) #\space) salida)
+         (loop (+ i 1) (+ nivel 1) #f #f)]
+
+        ;; Cierre de objeto o lista
+        [(or (char=? c #\}) (char=? c #\]))
+         (newline salida)
+         (display (make-string (* 2 (- nivel 1)) #\space) salida)
+         (write-char c salida)
+         (loop (+ i 1) (- nivel 1) #f #f)]
+
+        ;; Separacion entre elementos
+        [(char=? c #\,)
+         (write-char c salida)
+         (newline salida)
+         (display (make-string (* 2 nivel) #\space) salida)
+         (loop (+ i 1) nivel #f #f)]
+
+        ;; Separacion entre claves y valores
+        [(char=? c #\:)
+         (display ": " salida)
+         (loop (+ i 1) nivel #f #f)]
+
+        ;; Ignorar espacios existentes
+        [(char-whitespace? c)
+         (loop (+ i 1) nivel #f #f)]
+
+        ;; Cualquier otro caracter
+        [else
+         (write-char c salida)
+         (loop (+ i 1) nivel #f #f)])))
+
+  (get-output-string salida))
