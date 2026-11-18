@@ -4,7 +4,7 @@
 #define COD_LEN 7
 #define NOMBRE_LEN 128
 
-#define NUM_SEMESTRES 6
+#define NUM_SEMESTRES 8
 
 #define BLOQUE_NOMBRE_LEN 32
 
