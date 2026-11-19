@@ -11,6 +11,7 @@
 (struct CursoInfo
   ([codigo : String]
    [nombre : String]
+   [area : String]
    [creditos : Integer]
    [puede-matricular : Boolean]
    [carrera : String])

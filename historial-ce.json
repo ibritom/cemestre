@@ -4,254 +4,312 @@
   "Bloque 0": [
     {
       "codigo": "CI0205",
+      "area": "ingles",
       "aprobado": false
     },
     {
       "codigo": "MA0101",
+      "area": "matematica",
       "aprobado": true
     }
   ],
   "Bloque 1": [
     {
       "codigo": "CE1101",
+      "area": "carrera",
       "aprobado": true
     },
     {
       "codigo": "CE1104",
+      "area": "carrera",
       "aprobado": true
     },
     {
       "codigo": "MA1102",
+      "area": "matematica",
       "aprobado": true
     },
     {
       "codigo": "MA1403",
+      "area": "matematica",
       "aprobado": true
     },
     {
       "codigo": "QU1102",
+      "area": "ciencias-naturales",
       "aprobado": true
     },
     {
       "codigo": "QU1106",
+      "area": "ciencias-naturales",
       "aprobado": true
     },
     {
       "codigo": "SE1100",
+      "area": "cultural-deportiva",
       "aprobado": false
     },
     {
       "codigo": "SE1200",
+      "area": "cultural-deportiva",
       "aprobado": false
     }
   ],
   "Bloque 2": [
     {
       "codigo": "CE1103",
+      "area": "carrera",
       "aprobado": true
     },
     {
       "codigo": "CE1105",
+      "area": "carrera",
       "aprobado": true
     },
     {
       "codigo": "CI1407",
+      "area": "general",
       "aprobado": true
     },
     {
       "codigo": "CS1502",
+      "area": "general",
       "aprobado": true
     },
     {
       "codigo": "FI1101",
+      "area": "ciencias-naturales",
       "aprobado": true
     },
     {
       "codigo": "FI1201",
+      "area": "ciencias-naturales",
       "aprobado": true
     },
     {
       "codigo": "MA1103",
+      "area": "matematica",
       "aprobado": true
     },
     {
       "codigo": "SE1400",
+      "area": "cultural-deportiva",
       "aprobado": false
     }
   ],
   "Bloque 3": [
     {
       "codigo": "CE2103",
+      "area": "carrera",
       "aprobado": true
     },
     {
       "codigo": "CS2101",
+      "area": "general",
       "aprobado": true
     },
     {
       "codigo": "EL2113",
+      "area": "electronica",
       "aprobado": true
     },
     {
       "codigo": "FH1000",
+      "area": "humanidades",
       "aprobado": false
     },
     {
       "codigo": "FI1102",
+      "area": "ciencias-naturales",
       "aprobado": false
     },
     {
       "codigo": "FI1202",
+      "area": "ciencias-naturales",
       "aprobado": false
     },
     {
       "codigo": "MA2104",
+      "area": "matematica",
       "aprobado": true
     }
   ],
   "Bloque 4": [
     {
       "codigo": "CE1106",
+      "area": "electronica",
       "aprobado": false
     },
     {
       "codigo": "CE2201",
+      "area": "electronica",
       "aprobado": false
     },
     {
       "codigo": "EL2114",
+      "area": "electronica",
       "aprobado": false
     },
     {
       "codigo": "EL2207",
+      "area": "electronica",
       "aprobado": false
     },
     {
       "codigo": "PI2609",
+      "area": "matematica",
       "aprobado": false
     },
     {
       "codigo": "SO4604",
+      "area": "general",
       "aprobado": false
     }
   ],
   "Bloque 5": [
     {
       "codigo": "CE1107",
+      "area": "carrera",
       "aprobado": false
     },
     {
       "codigo": "CE3101",
+      "area": "carrera",
       "aprobado": false
     },
     {
-      "codigo": "CD3201",
+      "codigo": "CE3201",
+      "area": "carrera",
       "aprobado": false
     },
     {
       "codigo": "MA2105",
+      "area": "matematica",
       "aprobado": false
     },
     {
       "codigo": "PI5516",
+      "area": "general",
       "aprobado": false
     }
   ],
   "Bloque 6": [
     {
       "codigo": "CE1108",
+      "area": "carrera",
       "aprobado": false
     },
     {
       "codigo": "CE1109",
+      "area": "carrera",
       "aprobado": false
     },
     {
       "codigo": "CE1110",
+      "area": "carrera",
       "aprobado": false
     },
     {
       "codigo": "CE4301",
+      "area": "carrera",
       "aprobado": false
     },
     {
       "codigo": "CI3203",
+      "area": "ingles",
       "aprobado": false
     }
   ],
   "Bloque 7": [
     {
       "codigo": "CE1111",
+      "area": "carrera",
       "aprobado": false
     },
     {
       "codigo": "CE1112",
+      "area": "carrera",
       "aprobado": false
     },
     {
       "codigo": "CE1116",
+      "area": "carrera",
       "aprobado": false
     },
     {
       "codigo": "CE4302",
+      "area": "carrera",
       "aprobado": false
     },
     {
       "codigo": "CE4303",
+      "area": "carrera",
       "aprobado": false
     }
   ],
   "Bloque 8": [
     {
       "codigo": "AE4208",
+      "area": "general",
       "aprobado": false
     },
     {
       "codigo": "CE1113",
+      "area": "carrera",
       "aprobado": false
     },
     {
       "codigo": "CE5301",
+      "area": "carrera",
       "aprobado": false
     },
     {
       "codigo": "CE5701",
+      "area": "carrera",
       "aprobado": false
     },
     {
       "codigo": "CS3404",
+      "area": "carrera",
       "aprobado": false
     }
   ],
   "Bloque 9": [
     {
       "codigo": "CE1114",
+      "area": "carrera",
       "aprobado": false
     },
     {
       "codigo": "CE1115",
+      "area": "carrera",
       "aprobado": false
     },
     {
       "codigo": "CE1117",
+      "area": "carrera",
       "aprobado": false
     },
     {
       "codigo": "CE5801",
+      "area": "carrera",
       "aprobado": false
     },
     {
       "codigo": "CE5901",
+      "area": "carrera",
       "aprobado": false
     },
     {
       "codigo": "CS4402",
+      "area": "carrera",
       "aprobado": false
     }
   ],
   "Bloque 10": [
     {
       "codigo": "CE5601",
+      "area": "carrera",
       "aprobado": false
     }
   ]

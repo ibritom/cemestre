@@ -101,6 +101,7 @@ int exportar_catalogo_json(const char *filename,
 
         json_object_set_new(curso_json, "codigo", json_string(base->codigo));
         json_object_set_new(curso_json, "nombre", json_string(base->nombre));
+	json_object_set_new(curso_json, "area", json_string(base->area));
         json_object_set_new(curso_json, "creditos", json_integer(base->creditos));
         json_object_set_new(curso_json, "aprobado", json_boolean(aprobado));
 
@@ -213,3 +214,4 @@ int exportar_catalogo_json(const char *filename,
 
     return resultado == 0;
 }
+

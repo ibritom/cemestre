@@ -1,0 +1,56 @@
+{
+ "combinaciones":[
+  {
+    "creditos_totales": 3,
+    "cursos": [
+      {
+        "area": "electronica",
+        "carrera": "ingenieria-computadores",
+        "codigo": "CE1106",
+        "creditos": 3,
+        "grupo": 1,
+        "horario": [
+          {
+            "fin": "21120",
+            "inicio": "20930"
+          },
+          {
+            "fin": "41120",
+            "inicio": "40930"
+          }
+        ],
+        "nombre": "Paradigmas de programación",
+        "profesores": [
+          "BARBOZA ARTAVIA LUIS"
+        ]
+      }
+    ]
+  },
+  {
+    "creditos_totales": 3,
+    "cursos": [
+      {
+        "area": "electronica",
+        "carrera": "ingenieria-computadores",
+        "codigo": "CE1106",
+        "creditos": 3,
+        "grupo": 2,
+        "horario": [
+          {
+            "fin": "31850",
+            "inicio": "31700"
+          },
+          {
+            "fin": "11850",
+            "inicio": "11700"
+          }
+        ],
+        "nombre": "Paradigmas de programación",
+        "profesores": [
+          "GAMBOA RAMIREZ SANTIAGO"
+        ]
+      }
+    ]
+  }
+ ]
+}

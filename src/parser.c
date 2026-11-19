@@ -32,6 +32,36 @@ static int codigo_en_primeros_cuatro_bloques(json_t *historial_root,
     return 0;
 }
 
+static const char *obtener_area_historial(json_t *historial_root,
+                                          const char *codigo) {
+    char nombre_bloque[BLOQUE_NOMBRE_LEN];
+
+    for (int semestre = 0; semestre <= NUM_SEMESTRES; semestre++) {
+        snprintf(nombre_bloque, sizeof(nombre_bloque), "Bloque %d", semestre);
+        json_t *bloque = json_object_get(historial_root, nombre_bloque);
+
+        if (!bloque || !json_is_array(bloque)) {
+            continue;
+        }
+
+        size_t n = json_array_size(bloque);
+        for (size_t i = 0; i < n; i++) {
+            json_t *curso = json_array_get(bloque, i);
+            json_t *j_codigo = json_object_get(curso, "codigo");
+
+            if (j_codigo && json_is_string(j_codigo) &&
+                strcmp(json_string_value(j_codigo), codigo) == 0) {
+                json_t *j_area = json_object_get(curso, "area");
+                return (j_area && json_is_string(j_area))
+                           ? json_string_value(j_area)
+                           : "";
+            }
+        }
+    }
+
+    return "";
+}
+
 GrupoCurso *parsear_plan(json_t *plan_root,
                                 json_t *historial_root,
                                 size_t *out_count) {
@@ -113,6 +143,8 @@ GrupoCurso *parsear_plan(json_t *plan_root,
                      j_nombre && json_is_string(j_nombre)
                          ? json_string_value(j_nombre)
                          : "");
+	    snprintf(gc->area, AREA_NOMBRE_LEN, "%s",
+        	     obtener_area_historial(historial_root, codigo));
 
             gc->creditos = j_creditos && json_is_integer(j_creditos)
                                ? (int)json_integer_value(j_creditos)
@@ -122,6 +154,10 @@ GrupoCurso *parsear_plan(json_t *plan_root,
                                                    &gc->num_requisitos);
             gc->correquisitos = copiar_array_strings(j_correquisitos,
                                                       &gc->num_correquisitos);
+	    snprintf(gc->nombre, NOMBRE_LEN, "%s",
+            j_nombre && json_is_string(j_nombre)
+                ? json_string_value(j_nombre)
+                : "");
 
             json_t *j_numgrupo = json_object_get(grupo, "grupo");
             gc->grupo = j_numgrupo && json_is_integer(j_numgrupo)
@@ -183,6 +219,7 @@ void liberar_plan(GrupoCurso *plan, size_t count) {
         liberar_array_strings(plan[i].profesores, plan[i].num_profesores);
         free(plan[i].horarios);
         free(plan[i].choques);
+
     }
 
     free(plan);
