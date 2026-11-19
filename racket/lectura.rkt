@@ -102,6 +102,7 @@
   (CursoInfo
    codigo
    (como-string (campo-obligatorio curso 'nombre))
+   (como-string (campo-obligatorio curso 'area))
    (como-entero (campo-obligatorio curso 'creditos))
    (como-booleano
     (campo-opcional curso 'puede_matricular #f))
@@ -161,7 +162,7 @@
        (leer-curso carrera-raiz curso))
      cursos-json))
 
-  
+
 ;; Grupos disponibles de cada curso
 (: candidatos
    (Immutable-HashTable String CursoCandidatos))

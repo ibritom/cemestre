@@ -58,6 +58,7 @@
        'codigo (CursoInfo-codigo curso)
        'grupo (cdr par)
        'nombre (CursoInfo-nombre curso)
+       'area (CursoInfo-area curso)
        'carrera (CursoInfo-carrera curso)
        'creditos (CursoInfo-creditos curso)
        'profesores (GrupoInfo-profesores grupo)

@@ -4,6 +4,6 @@
     { "codigo": "MA2105", "grupos": [1] },
     { "codigo": "CE1106", "grupos": [1, 2] }
   ],
-  "min_creditos": 5,
+  "min_creditos": 3,
   "max_creditos": 10
 }

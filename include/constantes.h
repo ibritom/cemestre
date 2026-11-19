@@ -8,6 +8,8 @@
 
 #define BLOQUE_NOMBRE_LEN 32
 
+#define AREA_NOMBRE_LEN 32
+
 #define HORARIO_DIVISOR 10000
 #define HORARIO_STR_LEN 6
 

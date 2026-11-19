@@ -26,6 +26,7 @@ typedef struct {
 
     char codigo[COD_LEN];
     char nombre[NOMBRE_LEN];
+    char area[AREA_NOMBRE_LEN];
 
     int creditos;
 
@@ -49,3 +50,4 @@ typedef struct {
 } GrupoCurso;
 
 #endif
+
