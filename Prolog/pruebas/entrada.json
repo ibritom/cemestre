@@ -1,0 +1,52 @@
+{
+  "combinaciones": [
+    {
+      "cursos": [
+        {"codigo": "TESTCE01", "grupo": 1, "creditos": 3, "carrera": "ingenieria-computadores", "area": "programacion"},
+        {"codigo": "TESTCO01", "grupo": 1, "creditos": 2, "carrera": "ingenieria-construccion", "area": "estructuras"}
+      ]
+    },
+    {
+      "cursos": [
+        {"codigo": "PI5516", "grupo": 1, "creditos": 3, "carrera": "ingenieria-computadores", "area": "economia"},
+        {"codigo": "AE5121", "grupo": 1, "creditos": 3, "carrera": "ingenieria-construccion", "area": "economia"}
+      ]
+    },
+    {
+      "cursos": [
+        {"codigo": "TESTCE01", "grupo": 1, "creditos": 3, "carrera": "ingenieria-computadores", "area": "programacion"},
+        {"codigo": "TESTCE02", "grupo": 1, "creditos": 3, "carrera": "ingenieria-computadores", "area": "programacion"},
+        {"codigo": "TESTCE03", "grupo": 1, "creditos": 3, "carrera": "ingenieria-computadores", "area": "programacion"},
+        {"codigo": "TESTCE04", "grupo": 1, "creditos": 3, "carrera": "ingenieria-computadores", "area": "programacion"},
+        {"codigo": "TESTCE05", "grupo": 1, "creditos": 3, "carrera": "ingenieria-computadores", "area": "programacion"}
+      ]
+    },
+    {
+      "cursos": [
+        {"codigo": "CE1116", "grupo": 1, "creditos": 3, "carrera": "ingenieria-computadores", "area": "diseno"},
+        {"codigo": "CE1114", "grupo": 1, "creditos": 3, "carrera": "ingenieria-computadores", "area": "proyectos"}
+      ]
+    },
+    {
+      "cursos": [
+        {"codigo": "CE1114", "grupo": 1, "creditos": 3, "carrera": "ingenieria-computadores", "area": "proyectos"},
+        {"codigo": "CE1116", "grupo": 1, "creditos": 3, "carrera": "ingenieria-computadores", "area": "diseno"},
+        {"codigo": "PI5516", "grupo": 1, "creditos": 3, "carrera": "ingenieria-computadores", "area": "economia"},
+        {"codigo": "AE5121", "grupo": 1, "creditos": 3, "carrera": "ingenieria-construccion", "area": "economia"}
+      ]
+    },
+    {
+      "cursos": [
+        {"codigo": "TESTCO01", "grupo": 1, "creditos": 2, "carrera": "ingenieria-construccion", "area": "estructuras"}
+      ]
+    },
+    {
+      "cursos": [
+        {"codigo": "TESTCE01", "grupo": 1, "creditos": 3, "carrera": "ingenieria-computadores", "area": "programacion"},
+        {"codigo": "TESTCE02", "grupo": 1, "creditos": 3, "carrera": "ingenieria-computadores", "area": "programacion"},
+        {"codigo": "TESTCE03", "grupo": 1, "creditos": 3, "carrera": "ingenieria-computadores", "area": "programacion"},
+        {"codigo": "TESTCE04", "grupo": 1, "creditos": 3, "carrera": "ingenieria-computadores", "area": "programacion"}
+      ]
+    }
+  ]
+}

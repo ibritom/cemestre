@@ -1,0 +1,129 @@
+{
+  "combinaciones": [
+    {
+      "id": 1,
+      "cursos": [
+        {"codigo": "TESTCE01", "grupo": 1},
+        {"codigo": "TESTCO01", "grupo": 1}
+      ],
+      "cumple": true,
+      "razon": null,
+      "sugerencia": null
+    },
+    {
+      "id": 2,
+      "cursos": [
+        {"codigo": "PI5516", "grupo": 1},
+        {"codigo": "AE5121", "grupo": 1}
+      ],
+      "cumple": false,
+      "razon": {
+        "regla": "balance_carreras",
+        "carrera": "ingenieria-construccion",
+        "creditos": 3,
+        "total": 6,
+        "max_porcentaje": 40
+      },
+      "sugerencia": {
+        "existe": true,
+        "retirar": {
+          "codigo": "AE5121",
+          "grupo": 1
+        }
+      }
+    },
+    {
+      "id": 3,
+      "cursos": [
+        {"codigo": "TESTCE01", "grupo": 1},
+        {"codigo": "TESTCE02", "grupo": 1},
+        {"codigo": "TESTCE03", "grupo": 1},
+        {"codigo": "TESTCE04", "grupo": 1},
+        {"codigo": "TESTCE05", "grupo": 1}
+      ],
+      "cumple": false,
+      "razon": {
+        "regla": "limite_area",
+        "area": "programacion",
+        "cantidad": 5,
+        "maximo": 4
+      },
+      "sugerencia": {
+        "existe": true,
+        "retirar": {
+          "codigo": "TESTCE01",
+          "grupo": 1
+        }
+      }
+    },
+    {
+      "id": 4,
+      "cursos": [
+        {"codigo": "CE1116", "grupo": 1},
+        {"codigo": "CE1114", "grupo": 1}
+      ],
+      "cumple": false,
+      "razon": {
+        "regla": "incompatibilidad",
+        "curso_a": "CE1114",
+        "curso_b": "CE1116"
+      },
+      "sugerencia": {
+        "existe": true,
+        "retirar": {
+          "codigo": "CE1116",
+          "grupo": 1
+        }
+      }
+    },
+    {
+      "id": 5,
+      "cursos": [
+        {"codigo": "CE1114", "grupo": 1},
+        {"codigo": "CE1116", "grupo": 1},
+        {"codigo": "PI5516", "grupo": 1},
+        {"codigo": "AE5121", "grupo": 1}
+      ],
+      "cumple": false,
+      "razon": {
+        "regla": "incompatibilidad",
+        "curso_a": "PI5516",
+        "curso_b": "AE5121"
+      },
+      "sugerencia": {
+        "existe": false,
+        "retirar": null
+      }
+    },
+    {
+      "id": 6,
+      "cursos": [
+        {"codigo": "TESTCO01", "grupo": 1}
+      ],
+      "cumple": false,
+      "razon": {
+        "regla": "balance_carreras",
+        "carrera": "ingenieria-construccion",
+        "creditos": 2,
+        "total": 2,
+        "max_porcentaje": 40
+      },
+      "sugerencia": {
+        "existe": false,
+        "retirar": null
+      }
+    },
+    {
+      "id": 7,
+      "cursos": [
+        {"codigo": "TESTCE01", "grupo": 1},
+        {"codigo": "TESTCE02", "grupo": 1},
+        {"codigo": "TESTCE03", "grupo": 1},
+        {"codigo": "TESTCE04", "grupo": 1}
+      ],
+      "cumple": true,
+      "razon": null,
+      "sugerencia": null
+    }
+  ]
+}
