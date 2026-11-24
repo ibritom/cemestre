@@ -1,0 +1,189 @@
+{
+  "combinaciones": [
+    {
+      "cumple":true,
+      "cursos": [
+	{
+	  "codigo":"TESTCE01",
+	  "grupo":1
+	},
+	{
+	  "codigo":"TESTCO01",
+	  "grupo":1
+	}
+      ],
+      "id":1,
+      "razon":null,
+      "sugerencia":null
+    },
+    {
+      "cumple":false,
+      "cursos": [
+	{
+	  "codigo":"PI5516",
+	  "grupo":1
+	},
+	{
+	  "codigo":"AE5121",
+	  "grupo":1
+	}
+      ],
+      "id":2,
+      "razon": {
+	"carrera":"ingenieria-construccion",
+	"creditos":3,
+	"max_porcentaje":40,
+	"regla":"balance_carreras",
+	"total":6
+      },
+      "sugerencia": {
+	"existe":true,
+	"retirar": {
+	  "codigo":"AE5121",
+	  "grupo":1
+	}
+      }
+    },
+    {
+      "cumple":false,
+      "cursos": [
+	{
+	  "codigo":"TESTCE01",
+	  "grupo":1
+	},
+	{
+	  "codigo":"TESTCE02",
+	  "grupo":1
+	},
+	{
+	  "codigo":"TESTCE03",
+	  "grupo":1
+	},
+	{
+	  "codigo":"TESTCE04",
+	  "grupo":1
+	},
+	{
+	  "codigo":"TESTCE05",
+	  "grupo":1
+	}
+      ],
+      "id":3,
+      "razon": {
+	"area":"programacion",
+	"cantidad":5,
+	"maximo":4,
+	"regla":"limite_area"
+      },
+      "sugerencia": {
+	"existe":true,
+	"retirar": {
+	  "codigo":"TESTCE01",
+	  "grupo":1
+	}
+      }
+    },
+    {
+      "cumple":false,
+      "cursos": [
+	{
+	  "codigo":"CE1116",
+	  "grupo":1
+	},
+	{
+	  "codigo":"CE1114",
+	  "grupo":1
+	}
+      ],
+      "id":4,
+      "razon": {
+	"curso_a":"CE1114",
+	"curso_b":"CE1116",
+	"regla":"incompatibilidad"
+      },
+      "sugerencia": {
+	"existe":true,
+	"retirar": {
+	  "codigo":"CE1116",
+	  "grupo":1
+	}
+      }
+    },
+    {
+      "cumple":false,
+      "cursos": [
+	{
+	  "codigo":"CE1114",
+	  "grupo":1
+	},
+	{
+	  "codigo":"CE1116",
+	  "grupo":1
+	},
+	{
+	  "codigo":"PI5516",
+	  "grupo":1
+	},
+	{
+	  "codigo":"AE5121",
+	  "grupo":1
+	}
+      ],
+      "id":5,
+      "razon": {
+	"curso_a":"PI5516",
+	"curso_b":"AE5121",
+	"regla":"incompatibilidad"
+      },
+      "sugerencia": {
+	"existe":false,
+	"retirar":null
+      }
+    },
+    {
+      "cumple":false,
+      "cursos": [
+	{
+	  "codigo":"TESTCO01",
+	  "grupo":1
+	}
+      ],
+      "id":6,
+      "razon": {
+	"carrera":"ingenieria-construccion",
+	"creditos":2,
+	"max_porcentaje":40,
+	"regla":"balance_carreras",
+	"total":2
+      },
+      "sugerencia": {
+	"existe":false,
+	"retirar":null
+      }
+    },
+    {
+      "cumple":true,
+      "cursos": [
+	{
+	  "codigo":"TESTCE01",
+	  "grupo":1
+	},
+	{
+	  "codigo":"TESTCE02",
+	  "grupo":1
+	},
+	{
+	  "codigo":"TESTCE03",
+	  "grupo":1
+	},
+	{
+	  "codigo":"TESTCE04",
+	  "grupo":1
+	}
+      ],
+      "id":7,
+      "razon":null,
+      "sugerencia":null
+    }
+  ]
+}

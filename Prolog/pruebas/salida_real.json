@@ -1,0 +1,28 @@
+{
+  "combinaciones": [
+    {
+      "cumple":true,
+      "cursos": [
+	{
+	  "codigo":"CE1106",
+	  "grupo":1
+	}
+      ],
+      "id":1,
+      "razon":null,
+      "sugerencia":null
+    },
+    {
+      "cumple":true,
+      "cursos": [
+	{
+	  "codigo":"CE1106",
+	  "grupo":2
+	}
+      ],
+      "id":2,
+      "razon":null,
+      "sugerencia":null
+    }
+  ]
+}
