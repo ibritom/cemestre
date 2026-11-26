@@ -1,0 +1,110 @@
+{
+ "combinaciones": [
+  {
+   "id": 1,
+   "cursos": [
+    {
+     "codigo": "CE1106",
+     "grupo": 1
+    }
+   ],
+   "cumple": true,
+   "razon": null,
+   "sugerencia": null
+  },
+  {
+   "id": 2,
+   "cursos": [
+    {
+     "codigo": "CE1106",
+     "grupo": 2
+    }
+   ],
+   "cumple": true,
+   "razon": null,
+   "sugerencia": null
+  },
+  {
+   "id": 3,
+   "cursos": [
+    {
+     "codigo": "CE1106",
+     "grupo": 1
+    },
+    {
+     "codigo": "MA1102",
+     "grupo": 1
+    },
+    {
+     "codigo": "FI1101",
+     "grupo": 1
+    }
+   ],
+   "cumple": false,
+   "razon": {
+    "regla": "balance_carreras",
+    "carrera": "ce",
+    "creditos": 3,
+    "total": 10,
+    "max_porcentaje": 20
+   },
+   "sugerencia": {
+    "existe": true,
+    "retirar": {
+     "codigo": "MA1102",
+     "grupo": 1
+    }
+   }
+  },
+  {
+   "id": 4,
+   "cursos": [
+    {
+     "codigo": "CE1106",
+     "grupo": 1
+    },
+    {
+     "codigo": "CE1103",
+     "grupo": 1
+    }
+   ],
+   "cumple": false,
+   "razon": {
+    "regla": "limite_area",
+    "area": "programacion",
+    "cantidad": 2,
+    "maximo": 1
+   },
+   "sugerencia": {
+    "existe": false,
+    "retirar": null
+   }
+  },
+  {
+   "id": 5,
+   "cursos": [
+    {
+     "codigo": "CE1106",
+     "grupo": 1
+    },
+    {
+     "codigo": "QU1102",
+     "grupo": 1
+    }
+   ],
+   "cumple": false,
+   "razon": {
+    "regla": "incompatibilidad",
+    "curso_a": "CE1106",
+    "curso_b": "QU1102"
+   },
+   "sugerencia": {
+    "existe": true,
+    "retirar": {
+     "codigo": "QU1102",
+     "grupo": 1
+    }
+   }
+  }
+ ]
+}
