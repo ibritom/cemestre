@@ -60,7 +60,6 @@
                 (Candidato-choques b))
         #t)))
 
-
 ;; Comprueba si un candidato choca con algún grupo
 ;; seleccionado de otro curso
 (: tiene-choque-externo?
@@ -80,6 +79,50 @@
       curso))
    cursos))
 
+;; Imprime un choque detectado en la consola (stderr)
+(: reportar-choque (-> Par Par String Void))
+(define (reportar-choque a b contexto)
+  (eprintf "CHOQUE: ~a grupo ~a  <->  ~a grupo ~a  (~a)\n"
+           (car a) (cdr a) (car b) (cdr b) contexto))
+
+;; Devuelve el primer candidato de otro curso con el que choca `candidato`
+(: buscar-choque-externo
+   (-> Candidato (Listof CursoCandidatos) (Option Candidato)))
+(define (buscar-choque-externo candidato cursos)
+  (define nombre (car (Candidato-par candidato)))
+  (define todos : (Listof Candidato) (apply append cursos))
+  (findf (lambda ([otro : Candidato])
+           (and (not (string=? nombre (car (Candidato-par otro))))
+                (candidatos-chocan? candidato otro)))
+         todos))
+
+;; Devuelve el primer par ya elegido con el que choca `c`
+(: buscar-choque-elegido (-> Candidato (Listof Par) (Option Par)))
+(define (buscar-choque-elegido c elegidos)
+  (findf (lambda ([e : Par]) (and (member e (Candidato-choques c)) #t))
+         elegidos))
+
+;; Orden para decidir cuál de los dos lados de un choque se imprime
+(: par<? (-> Par Par Boolean))
+(define (par<? a b)
+  (or (string<? (car a) (car b))
+      (and (string=? (car a) (car b))
+           (< (cdr a) (cdr b)))))
+
+;; Imprime cada choque entre grupos de distintos cursos una sola vez
+(: reportar-choques-externos (-> (Listof CursoCandidatos) Void))
+(define (reportar-choques-externos cursos)
+  (define todos : (Listof Candidato) (apply append cursos))
+  (for* ([a (in-list todos)]
+         [b (in-list todos)])
+    (when (and (not (string=? (car (Candidato-par a))
+                              (car (Candidato-par b))))
+               (par<? (Candidato-par a) (Candidato-par b))
+               (candidatos-chocan? a b))
+      (reportar-choque (Candidato-par a)
+                       (Candidato-par b)
+                       "choque entre grupos de distintos cursos"))))
+
 ;; Elimina los candidatos que tienen choques
 ;; y los cursos que se quedan sin grupos
 (: filtrar-cursos
@@ -87,10 +130,10 @@
        (Listof CursoCandidatos)))
 
 (define (filtrar-cursos cursos)
+  (reportar-choques-externos cursos)
   (filter
    (lambda ([curso : CursoCandidatos])
      (not (null? curso)))
-
    (map
     (lambda ([curso : CursoCandidatos])
       (filter
@@ -118,9 +161,14 @@
 (define (probar-grupos candidatos restantes elegidos)
   (cond
     [(null? candidatos) '()]
-    [(choca-con-elegidos? (car candidatos) elegidos)
-     ;; PODA: se corta esta rama, no se explora ningún curso restante.
-     (probar-grupos (cdr candidatos) restantes elegidos)]
+    [(buscar-choque-elegido (car candidatos) elegidos)
+     =>
+     (lambda ([choca-con : Par])
+       ;; PODA: se corta esta rama, no se explora ningún curso restante.
+       (reportar-choque (Candidato-par (car candidatos))
+                        choca-con
+                        "poda durante la generacion")
+       (probar-grupos (cdr candidatos) restantes elegidos))]
     [else
      (flujo-anexar
       (extender restantes (cons (Candidato-par (car candidatos)) elegidos))
